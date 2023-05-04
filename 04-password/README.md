@@ -1,1 +1,1 @@
-crack the code and find the pawword
+crack the code and find the password
