@@ -5,7 +5,7 @@ all: classic
 
 .PHONY: clean
 
-ret2libc: classic.c
+classic: classic.c
 
 clean:
 	rm -f classic
