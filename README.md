@@ -1,1 +1,2 @@
-# sti3a-security : intro to information security
+# sti3a : intro to information security
+
