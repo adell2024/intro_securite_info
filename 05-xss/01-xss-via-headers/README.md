@@ -23,7 +23,8 @@ Réponse du serveur :
 </html>
 
 A partir du navigateur, demander le même URL : https://brutelogic.com.br/lab/welcome.php?x=lolololo
-La navigateur affiche :
+
+Le navigateur affiche :
 Welcome, insa!
 
 
