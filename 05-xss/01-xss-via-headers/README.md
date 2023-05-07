@@ -5,4 +5,8 @@ xss via http headers
 
 A partir de votre navigateur, demandez la page https://brutelogic.com.br/lab/welcome.php
 
-A partie d'un terminal linux :
+A partie d'un terminal linux, utlisez curl pour demander la page welcome.php :
+![HIT](https://user-images.githubusercontent.com/38082725/236705956-567e642d-3d3c-47b6-b04b-9d5d57145ab4.png)
+
+Noter comment la valeur de l'entête x-sucuri-cache passe,après 3 appels à curl, de "MISS" à "HIT"
+
