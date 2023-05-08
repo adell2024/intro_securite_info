@@ -22,10 +22,39 @@ En validant avec "Entrée", un message d'avertissement et des "erreurs" apparais
 
 ![webhook3](https://user-images.githubusercontent.com/38082725/236838688-d35ff679-2eb2-4a01-a8da-f6c44bc20de7.png)
 
-Ce message du navigateur nous informe que le domaine que webhook.site ne fait pas confiance au domaine patapain.com : pour les deux domaines webhook.site et patapain ont des origines différentes.Le domaine webhook.site n'accepte pas des requêtes émanant d'une origine différente que la sienne (d'où le term Same Origin policy) 
+Ce message du navigateur nous informe que le domaine webhook.site ne fait pas confiance au domaine patapain.com : les deux domaines webhook.site et patapain ont des origines différentes.Le domaine webhook.site n'accepte pas des requêtes émanant d'une origine différente que la sienne (d'où le terme Same Origin policy) 
 
 Rendons-nous sur le site webhoo.site:
 
 ![webhook4](https://user-images.githubusercontent.com/38082725/236846766-9b61eb26-b3c2-42d2-b1b6-c4952e1e383d.png)
 
 Nous notons qu'une requête GET a été bien réçu par webhook.site : fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a") envoie par défaut la demande avec la méthode GET.Dans ce cas précis, la navigateur a birn envoyé la requête telle quelle au domaine webhook.site qui à son tour l'a bien récu : mais du fait sa politique SOP, ne peut pas traiter des requêtes d'origine différente, et en informe le navigateur qui à son tour répond par un message d'avertissement ( CORS policy etc..). 
+
+Dans certains cas, le navigateur du client peut demander au serveur si celui-ci autorise l'usage , par exemple, de la méthode DELETE dans la requête HTTP, avant d'envoyer la "vraie" requête avec la méthode DELETE:
+
+fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
+{
+ method: 'DELETE', 
+ headers: {'content-type': 'text/plain'}, 
+ body: 'patapain.com'
+}
+).then(r => console.log(r.body)).catch(() => console.log("failed"))
+
+![webhook5](https://user-images.githubusercontent.com/38082725/236885151-4a3efe78-4dff-4fad-b399-42495a49a3cd.png)
+
+et en se rendant sur le site webhook:
+
+![webhook6](https://user-images.githubusercontent.com/38082725/236889068-733bb983-f13e-426e-9d9e-812a23bfeaac.png)
+
+Dans ce dernier cas, une pre-requête de vérification OPTIONS (preflight request) est d'abord envoyée au au domaine webhook.site : C'est une requête construite par le navigateur utilisant la méthode OPTIONS qui ajoute trois en-têtes HTTP : La méthode Access-Control-Request-Method (en-US), les en-têtes Access-Control-Request-Headers et Origin.
+
+##challenge
+
+Dans la requête fecth, essayez d'autres pour la clé "method":
+fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
+{
+ method: 'DELETE', 
+ headers: {'content-type': 'text/plain'}, 
+ body: 'patapain.com'
+}
+).then(r => console.log(r.body)).catch(() => console.log("failed"))
