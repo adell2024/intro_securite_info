@@ -48,9 +48,10 @@ et en se rendant sur le site webhook:
 
 Dans ce dernier cas, une pre-requête de vérification OPTIONS (preflight request) est d'abord envoyée au au domaine webhook.site : C'est une requête construite par le navigateur utilisant la méthode OPTIONS qui ajoute trois en-têtes HTTP : La méthode Access-Control-Request-Method (en-US), les en-têtes Access-Control-Request-Headers et Origin.
 
-##challenge
+## challenge
 
 Dans la requête fecth, essayez d'autres pour la clé "method":
+
 fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
 {
  method: 'DELETE', 
