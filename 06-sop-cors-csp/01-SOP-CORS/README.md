@@ -50,12 +50,5 @@ Dans ce dernier cas, une pre-requête de vérification OPTIONS (preflight reques
 
 ## challenge
 
-Dans la requête fecth, essayez d'autres valeurs pour la clé "method":
+Dans la requête fecth, essayez d'autres valeurs pour la clé "method". Utilisez la suite Burp
 
-fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
-{
- method: 'DELETE', 
- headers: {'content-type': 'text/plain'}, 
- body: 'patapain.com'
-}
-).then(r => console.log(r.body)).catch(() => console.log("failed"))
