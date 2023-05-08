@@ -1,2 +1,2 @@
-Same Origin Policy
+Same Origin Policy / 
 Cross-Origin Resource Sharing 
