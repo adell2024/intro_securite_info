@@ -43,3 +43,6 @@ Dans Burp Suite( mais ce n'est pas obligatoire, vous pouvez faire ce test sans B
 On remarque que la clé "Test" a été bien injectée!
 
 
+## Challenge : Injectez un code javascript
+
+Dans la chaîne "Test: 42", remplacez la valeur "42" par un code javascript qui, à son exécution par le navigateur", affichera une boîte popup avec le message "Hacked".
