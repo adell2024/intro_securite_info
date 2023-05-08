@@ -50,7 +50,7 @@ Dans ce dernier cas, une pre-requête de vérification OPTIONS (preflight reques
 
 ## challenge
 
-Dans la requête fecth, essayez d'autres pour la clé "method":
+Dans la requête fecth, essayez d'autres valeurs pour la clé "method":
 
 fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
 {
