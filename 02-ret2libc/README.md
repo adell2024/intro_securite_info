@@ -34,3 +34,6 @@ ou
 
 gdb-peda$ asmsearch "pop rdi ; ret"
 
+## Chercher la chaîne "/bin/sh"
+
+![ret4](https://github.com/aabda2000/sti3a-security/assets/38082725/e73f41cb-5a46-478e-8a6c-3b82b30164a4)
