@@ -50,18 +50,29 @@ gdb-peda$
 gdb-peda$ pattern_create 400 entry.txt
 
 Writing pattern of 400 chars to filename "entry.txt"
+
 gdb-peda$ 
+
 gdb-peda$ r < <(cat entry.txt)
+
 Starting program: /home/insa/advanced/secu/cm/02-ret2libc/ret2libc < <(cat entry.txt)
 
 adress of buf=0x7fffffffde10
+
 Stopped reason: SIGSEGV
+
 0x0000000000401178 in vuln () at ret2libc.c:10
+
 10	}
+
 gdb-peda$ x/1wx $rsp
+
 0x7fffffffde98:	0x41514141
+
 gdb-peda$ pattern offset 0x41514141
+
 1095844161 found at offset: 136
+
 
 l'offset vaut 136
 
