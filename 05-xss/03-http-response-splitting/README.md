@@ -6,7 +6,11 @@ Si  une donée entrée est reflétée dans un en-tête de réponse, alors une in
 
 CRLF --> Http Response Splitting--> XSS
 
-CRLF--> Header Injection--> redirection
+CRLF--> Header Injection (--> redirection
+
+## La vulnérabilité 
+
+Une application qui intègre les données utilisateur dans les en-têtes de réponse HTTP (par exemple, Location, Set-Cookie) sans les assainir!
 
 ## Exemple de réponse HTTP:
 ![HTTP_Response_Splitting_-_Google_Docs-4](https://github.com/aabda2000/sti3a-security/assets/38082725/3d9ff40e-18b0-4660-8d39-c20601249ebc)
