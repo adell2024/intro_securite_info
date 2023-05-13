@@ -5,6 +5,7 @@ HRS est une forme de vulnérabilité d'application Web, résultant de l'échec d
 Si  une donée entrée est reflétée dans un en-tête de réponse, alors une injection CRLF est possible :
 
 CRLF --> Http Response Splitting--> XSS
+
 CRLF--> Header Injection--> redirection
 
 ## Etude de cas
