@@ -8,6 +8,8 @@ CRLF --> Http Response Splitting--> XSS
 
 CRLF--> Header Injection--> redirection
 
+## Exemple de réponse HTTP:
+![HTTP_Response_Splitting_-_Google_Docs-4](https://github.com/aabda2000/sti3a-security/assets/38082725/3d9ff40e-18b0-4660-8d39-c20601249ebc)
 ## Etude de cas
 Pour réaliser (et étudier) cette attaque HRS, on emploie la suite BurpSuite. La machine vulnérable cible est la fameuse VM "OWASP Broken Web Apps".
 
