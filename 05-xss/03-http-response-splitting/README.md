@@ -2,6 +2,11 @@
 
 HRS est une forme de vulnérabilité d'application Web, résultant de l'échec de l'application ou de son environnement à nettoyer correctement les valeurs entrées par l'utlisteur ou un agent : Cette vulnérabilité Web  permet à un attaquant d'injecter des caractères CRLF (%0d%0a) dans une réponse HTTP. On parle de vulnérabilités de type CRLF(\r\n).
 
+Si  une donée entrée est reflétée dans un en-tête de réponse, alors une injection CRLF est possible :
+
+CRLF --> Http Response Splitting--> XSS
+CRLF--> Header Injection--> redirection
+
 ## Etude de cas
 Pour réaliser (et étudier) cette attaque HRS, on emploie la suite BurpSuite. La machine vulnérable cible est la fameuse VM "OWASP Broken Web Apps".
 
