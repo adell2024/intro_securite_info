@@ -15,9 +15,14 @@ CRLF--> Header Injection (--> redirection
 Une application qui intègre les données utilisateur dans les en-têtes de réponse HTTP (par exemple, Location, Set-Cookie) sans les assainir!
 
 ## Exemple de requête/réponse HTTP:
+
 ![request1](https://github.com/aabda2000/sti3a-security/assets/38082725/9701cf10-293c-4c8e-bec4-fdf607f3e984)
 
 ![response](https://github.com/aabda2000/sti3a-security/assets/38082725/7152bc21-5c78-4fd6-9fb2-0dd4b0939729)
+
+# Scenario d'attaque et empoisonnement du cache web
+
+![hrs4](https://github.com/aabda2000/sti3a-security/assets/38082725/40273ce5-30e3-4fe3-b483-91ddf3bb0d69)
 
 ## Etude de cas
 Pour réaliser (et étudier) cette attaque HRS, on emploie la suite BurpSuite. La machine vulnérable cible est la fameuse VM "OWASP Broken Web Apps".
