@@ -18,7 +18,7 @@ Essayez : p01=</title><svg/onload=alert(1)>
 
 https://brutelogic.com.br/gym.php?p04=toto
 
-Idée : inspecter la page et analyser le tag body :  <body onload="doSomething('toto')">
+Idée : inspecter la source de la page et analyser le tag body contenant l'attribut onload="doSomething('toto')
 
 ### Exo 3 : Injection dans un entête HTTP
 
