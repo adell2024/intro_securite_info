@@ -1,6 +1,8 @@
-## HRS
+## HTTP Response Splitting
 
-HRS est une forme de vulnérabilité d'application Web, résultant de l'échec de l'application ou de son environnement à nettoyer correctement les valeurs entrées par l'utlisteur ou un agent : Cette vulnérabilité Web  permet à un attaquant d'injecter des caractères CRLF (%0d%0a) dans une réponse HTTP. On parle de vulnérabilités de type CRLF(\r\n).
+HTTP Response Splitting est une forme de vulnérabilité d'application Web, résultant de l'échec de l'application ou de son environnement à nettoyer correctement les valeurs entrées par un utlisteur : Cette vulnérabilité Web  permet à un attaquant d'injecter des caractères CRLF (%0d%0a) dans une réponse HTTP. On parle de vulnérabilités de type CRLF(\r\n).Cela permet à l'attaquant de forcer le serveur à envoyer (sur le fil) des données qui seront interprétées comme 2 messages de réponse HTTP.
+
+une seule requête HTTP--> 2 réponses HTTP
 
 Si  une donée entrée est reflétée dans un en-tête de réponse, alors une injection CRLF est possible :
 
