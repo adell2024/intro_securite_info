@@ -13,3 +13,9 @@ idée: l'injection est possible : si je mets le paramètre p01 à toto, cette de
 
 
 Essayez : p01=</title><svg/onload=alert(1)>
+
+### Exo 2 : Injection filtrée par un gestionnaire d'événements
+
+https://brutelogic.com.br/gym.php?p04=toto
+
+Idée : inspecter la page et analyser le tag body :  <body onload="doSomething('toto')">
