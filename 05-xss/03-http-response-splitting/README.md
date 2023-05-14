@@ -39,9 +39,13 @@ Pour pouvoir la recopier, voilà la chaîne au format texte:
 Content-Length: 0
 
 HTTP/1.1 200 OK
+
 Content-Type: text/html
+
 Content-Length: 61
+
 Last-Modified: Fri, 30 Dec 2025 17:32:47 GMT
+
 <html><script>alert("stealing your data:")</script></html>
 
 ## Encodage
