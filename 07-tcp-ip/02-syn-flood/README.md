@@ -20,5 +20,8 @@ Avant l'attaque, nous faisons d'abord un telnet de la machine Client, et plus ta
 🚩 Un segment FIN, s’il ne transporte pas de données, consumera un "sequence number"
 
 
+## Attaque par SYN flood
 
+![flood2](https://github.com/aabda2000/sti3a-security/assets/38082725/ce691b7e-a8b1-4cb3-8886-01c1ad5862ac)
 
+l'état dans lequel le serveur attend le paquet ACK d'un client est appelé semi-ouvert (half-open) : Dans cet état, le serveur a préparé la communication avec un client en affectant un buffer de mémoire pour contenir les paquets entrants ainsi que les informations d'état. Sur un serveur, le nombre de connexions semi-ouvertes est est limité par des contraintes mémoire.
