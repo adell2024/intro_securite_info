@@ -27,3 +27,9 @@ Avant l'attaque, nous faisons d'abord un telnet de la machine Client, et plus ta
 l'état dans lequel le serveur attend le paquet ACK d'un client est appelé semi-ouvert (half-open) : Dans cet état, le serveur a préparé la communication avec un client en affectant un buffer de mémoire pour contenir les paquets entrants ainsi que les informations d'état. Sur un serveur, le nombre de connexions semi-ouvertes est est limité par des contraintes mémoire.
 
 Le but de l'attaque par SYN Flood est de remplir la mémoire du serveur avec des connexions semi-ouvertes. Des adresses IP usurpées sont utlisées par le Hacker faisant un nombre important de demandes de connexion au serveur, et par conséquent, les clients légitimes ne peuvent plus se connecter au serveur, dont les ressources sont épuisées.
+
+## Description de l'attaque
+
+Sur le serveur Server, nous devons désactiver une contre-mesure appelée cookies SYN, qui est activée par défaut. Cette contre-mesure est efficace contre l'inondation SYN flooding
+
+user@Server:~$ sudo sysctl -w net.ipv4.tcp_syncookies=0
