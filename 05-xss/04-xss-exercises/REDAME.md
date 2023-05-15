@@ -52,6 +52,6 @@ Idée: Observer le code source de la page ; répérer la zone contenant
 
 <a href="https://www.google.com/search?q=brutelogic"><div id="k"></div></a>
 
-Injecter votre code en suivant le format p21=https://www.google.com/search?q=brutelogic
+Injecter votre code en suivant le format de la donnée fournie au paramètre p21
 
 
