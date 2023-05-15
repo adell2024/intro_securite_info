@@ -4,6 +4,11 @@ Une série d'exercises XSS pour muscler vos connaissance en Cross-Site Scripting
 
 Aucun secret pour devenir agile en XSS : il faut pratiquer , pratiquer, .....
 
+## Carctères spéciaux
+
+Carriage return (\r): %0d || Linefeed (\n): %0a || %25 : % || %26 : & || &apos = %26apos; : ' ||
+%20 : (space) || %23 : "
+
 ### Exo 1 : Injecter dans le tag "title" de la page
 
 https://brutelogic.com.br/gym.php?p01=title
@@ -37,6 +42,16 @@ Idée : On parle d'injection URL : et si on regarde le formulaire de la page et 
 &lt;form action="/gym.php" method="POST"&gt;
   
 ....
-  
+
+### Exo 5 : Injection dans un lien hypertexte 
+
+https://brutelogic.com.br/gym.php?p21=https://www.google.com/search?q=brutelogic
+
+Idée: Observer le code source de la page ; répérer la zone contenant
+<script src="/file.js"></script>
+
+<a href="https://www.google.com/search?q=brutelogic"><div id="k"></div></a>
+
+Injecter votre code en suivant le format p21=https://www.google.com/search?q=brutelogic
 
 
