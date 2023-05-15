@@ -10,3 +10,15 @@ Avant l'attaque, nous faisons d'abord un telnet de la machine Client, et plus ta
 ## Etablissement de connexion : 3-ways handshake
 
 ![flood1](https://github.com/aabda2000/sti3a-security/assets/38082725/f44f0de0-aca0-4285-b6ca-afb559d17efb)
+
+Un segment SYN ne peut pas transporter de données, mais il consomme un "sequence number".
+
+Un segment SYN + ACK ne peut pas transporter de données, mais il consomme un "sequence number".
+
+Un  segment ACK, s’il ne transporte pas de données, ne consumera aucun  "sequence number"
+
+Un segment FIN, s’il ne transporte pas de données, consumera un "sequence number"
+
+
+
+
