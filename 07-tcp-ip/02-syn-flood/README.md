@@ -2,9 +2,9 @@
 Pour acquérir une expérience de première main sur l'attaque par inondation SYN, nous lancerons l'attaque dans un environnement de machines virtuelles. Pour une configuration idélae, trois VM seront nécessaires :
 une appelée Client (192.168.180.155), une appelée Server (192.168.180.153), et l'autre appelé Attacker (192.168.180.136). 
 
-Attacker vise à empêcher Client d'accèder à Target.
+Attacker vise à empêcher Client d'accèder à Server (Pour Server, j'ai utlisée la VM vulnérable metasploitable2).
 
-Avant l'attaque, nous faisons d'abord un telnet de la machine Client, et plus tard nous vérifierons si l'attaque par inondation SYN affecte les  demandes de connexions suivantes.
+Avant l'attaque, nous effectuons d'abord un telnet depuis la machine Client, et plus tard nous vérifierons si l'attaque par inondation SYN a affecté les nouvelles demandes de connexion.
 
 
 ## Etablissement de connexion : 3-ways handshake
