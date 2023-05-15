@@ -25,3 +25,16 @@ Idée : inspecter la source de la page et analyser le tag body contenant l'attri
 https://brutelogic.com.br/gym.php?p23=toto
   
 Idée : Utiliser Burp Suite pour observer les entêtes de la réponse HTTP
+
+### Exo 4 : Injection URL 
+
+https://brutelogic.com.br/gym.php
+
+Idée : On parle d'injection URL : et si on regarde le formulaire de la page et son attribut action 
+
+<form action="/gym.php" method="POST">
+  
+....
+  
+</form>
+
