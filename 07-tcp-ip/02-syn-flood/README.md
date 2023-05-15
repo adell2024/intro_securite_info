@@ -49,5 +49,5 @@ SYN Flood est une forme d'attaque DoS dans laquelle les attaquants envoient de n
 
 Lorsque la file d'attente est pleine, la victime ne pourrait plus prendre de connexion. La taille de la file d'attente peut être paramétrée au niveau du système. Sous Linux, nous pouvons vérifier le paramètre à l'aide de la commande suivante : 
 
-# sysctl -q net.ipv4.tcp_max_syn_backlog
+### sysctl -q net.ipv4.tcp_max_syn_backlog
 
