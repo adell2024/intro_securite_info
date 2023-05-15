@@ -1,6 +1,8 @@
 ## Gymnastique XSS
 
-Une série d'exercises XSS pour muscler vos connaissance en Cross-Site Scripting
+Une série d'exercises XSS pour muscler vos connaissance en Cross-Site Scripting (XSS).
+
+Aucun secret pour devenir agile en XSS : il faut pratiquer , pratiquer, .....
 
 ### Exo 1 : Injecter dans le tag "title" de la page
 
