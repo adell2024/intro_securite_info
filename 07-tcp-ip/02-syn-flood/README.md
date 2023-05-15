@@ -1,6 +1,6 @@
 ## SYN flood
 Pour acquérir une expérience de première main sur l'attaque par inondation SYN, nous lancerons l'attaque dans un environnement de machines virtuelles. Pour une configuration idélae, trois VM seront nécessaires :
-une appelée Client (10.0.2.68), une appelée Server (10.0.2.69), et l'autre appelé Attacker (10.0.2.70). 
+une appelée Client (192.168.180.155), une appelée Server (192.168.180.153), et l'autre appelé Attacker (192.168.180.136). 
 
 Attacker vise à empêcher Client d'accèder à Target.
 
@@ -30,6 +30,24 @@ Le but de l'attaque par SYN Flood est de remplir la mémoire du serveur avec des
 
 ## Description de l'attaque
 
-Sur le serveur Server, nous devons désactiver une contre-mesure appelée cookies SYN, qui est activée par défaut. Cette contre-mesure est efficace contre l'inondation SYN flooding
+Sur le serveur "Server", nous devons désactiver une contre-mesure appelée cookies SYN, qui est activée par défaut. Cette contre-mesure est efficace contre l'inondation SYN flooding
 
 user@Server:~$ sudo sysctl -w net.ipv4.tcp_syncookies=0
+
+Avant de lancer l'attaque, vérifions la situation des connexions sur le serveur
+user@Server:~$ netstat -tan -c
+
+L'attaquant utlise netwox pour inonder Server:
+
+sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
+
+
+Observez l'état des connexions sur le Server:
+![flood3](https://github.com/aabda2000/sti3a-security/assets/38082725/b885b8d7-a55f-4d02-9b11-4a976d79f4f2)
+
+SYN Flood est une forme d'attaque DoS dans laquelle les attaquants envoient de nombreuses requêtes SYN au port TCP d'une victime : les attaquants n'ont aucunemet l'intention de terminer la procédure de négociation à trois phases. Les attaquants utilisent des adresses IP usurpées. Grâce à cette attaque, les attaquants peuvent inonder la file d'attente de la victime quisera épuisée par les connexions semi-ouvertes.
+
+Lorsque la file d'attente est pleine, la victime ne pourrait plus prendre de connexion. La taille de la file d'attente peut être paramétrée au niveau du système. Sous Linux, nous pouvons vérifier le paramètre à l'aide de la commande suivante : 
+
+# sysctl -q net.ipv4.tcp_max_syn_backlog
+
