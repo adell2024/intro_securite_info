@@ -34,7 +34,7 @@ https://brutelogic.com.br/gym.php
 
 Idée : On parle d'injection URL : et si on regarde le formulaire de la page et son attribut action 
 
-&lt;form action="/gym.php" method="POST"&lgt;
+&lt;form action="/gym.php" method="POST"&gt;
   
 ....
   
