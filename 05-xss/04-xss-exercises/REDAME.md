@@ -54,4 +54,8 @@ Idée: Observer le code source de la page ; répérer la zone contenant
 
 Injecter votre code en suivant le format de la donnée fournie au paramètre p21
 
+### Exo 5 : Injection dans le tag <script>
+  
+https://brutelogic.com.br/gym.php?p12=bbbbbbbbbbbbbbbb
 
+Idée: cherchez la chaîne bbbbbbbbbbbbbbbbb dans le code source de la page.fermer le tage script (</script>)
