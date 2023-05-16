@@ -14,7 +14,7 @@ sudo apt -y install netwox
 La boite netwox comprend plusieurs outils. Chaque outil est identifié par un numéro unique.
 
 
-## Outil numéro 76 : Synflood
+## 🔷 Outil numéro 76 : Synflood
 
 Usage: netwox 76 -i ip -p port [-s spoofip]
 
@@ -28,7 +28,7 @@ Parameters:
 
 
 
-## Outil numéro 78 : Reset every TCP packet
+## 🔷 Outil numéro 78 : Reset every TCP packet
 
 Usage: netwox 78 [-d device] [-f filter] [-s spoofip]
 
@@ -41,7 +41,7 @@ Parameters:
 -s|--spoofip spoofip =>IP spoof initialization type {linkbraw}
 
 
-## Outil numéro 40 : Spoof IP4/TCP packet
+## 🔷 Outil numéro 40 : Spoof IP4/TCP packet
 
 Usage: netwox 40 [parameters ...]
 
