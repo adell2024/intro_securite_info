@@ -20,9 +20,18 @@ Usage: netwox 76 -i ip -p port [-s spoofip]
 
 Parameters:
 
--i|--dst-ip ip                =>{description: destination IP address}
+-i|--dst-ip ip                =>[description: destination IP address]
 
--p|--dst-port port             =>{description: destination port number}
+-p|--dst-port port             =>[description: destination port number]
 
--s|--spoofip spoofip           =>{description: IP spoof initialzation type}
+-s|--spoofip spoofip           =>[description: IP spoof initialzation type]
 
+
+
+## Outil numéro 78 : Reset every TCP packet
+
+Usage: netwox 78 [-d device] [-f filter] [-s spoofip]
+Parameters:
+-d|--device device  =>device name {Eth0}
+-f|--filter filter =>pcap filter
+-s|--spoofip spoofip =>IP spoof initialization type {linkbraw}
