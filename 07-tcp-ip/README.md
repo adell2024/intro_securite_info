@@ -39,3 +39,30 @@ Parameters:
 -f|--filter filter =>pcap filter
 
 -s|--spoofip spoofip =>IP spoof initialization type {linkbraw}
+
+
+## Outil numéro 40 : Spoof Ip4Tcp packe
+
+Usage: netwox 40 [parameters ...]
+
+Parameters:
+
+-l|--ip4-src ip =>Source IP
+
+-m|--ip4-dst ip =>Destination IP
+
+-j|--ip4-ttl uint32 =>Time to live
+
+-o|--tcp-src port =>TCP Source port number
+
+-p|--tcp-dst port =>TCP Destination port number
+
+-q|--tcp-seqnum uint32 =>TCP sequence number
+
+-E|--tcp-window uint32 =>TCP window size
+
+-r|--tcp-acknum uint32 =>TCP acknowledge number
+
+-z|--tcp-ack|+z|--no-tcp-ack =>TCP ack bit
+
+-H|--tcp-data data =>TCP data
