@@ -4,6 +4,9 @@ Dissquez le contenu d'un message HTTP, d'un segment TCP et d'un paquet IP
 
 A cette fin, utlisez le logiciel Wireshark.
 
+J'ai mis à votre disposition le fichier TCP_example.cap pour effectuer une analyse approfondie de son contenu.
+
+
 ### Protocole handshake pour initialiser la connexion entre le client et le serveur
 
 Analysez, à l'aide de Wireshark, le flux établissant la connexion entre le client (192.168.1.2) et le serveur web (174.143.213.184)
