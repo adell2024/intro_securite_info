@@ -41,7 +41,7 @@ Parameters:
 -s|--spoofip spoofip =>IP spoof initialization type {linkbraw}
 
 
-## Outil numéro 40 : Spoof Ip4Tcp packe
+## Outil numéro 40 : Spoof IP4/TCP packet
 
 Usage: netwox 40 [parameters ...]
 
