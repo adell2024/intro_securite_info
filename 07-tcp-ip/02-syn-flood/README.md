@@ -32,7 +32,7 @@ Le but de l'attaque par SYN Flood est de remplir la mémoire du serveur avec des
 
 Sur le serveur "Server", nous devons désactiver une contre-mesure appelée cookies SYN, qui est activée par défaut. Cette contre-mesure est efficace contre l'inondation SYN flooding
 
-user@Server:~$ sudo sysctl -w net.ipv4.tcp_syncookies=0
+### user@Server:~$ sudo sysctl -w net.ipv4.tcp_syncookies=0
 
 Avant de lancer l'attaque, vérifions la situation des connexions sur le serveur:
 
@@ -42,7 +42,6 @@ L'attaquant utlise netwox pour inonder Server:
 
 ### sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
 
-
 Observez l'état des connexions sur le Server:
 ![flood3](https://github.com/aabda2000/sti3a-security/assets/38082725/b885b8d7-a55f-4d02-9b11-4a976d79f4f2)
 
@@ -51,4 +50,7 @@ SYN Flood est une forme d'attaque DoS dans laquelle les attaquants envoient de n
 Lorsque la file d'attente est pleine, la victime ne pourrait plus prendre de connexion. La taille de la file d'attente peut être paramétrée au niveau du système. Sous Linux, nous pouvons vérifier le paramètre à l'aide de la commande suivante : 
 
 ### sysctl -q net.ipv4.tcp_max_syn_backlog
+
+Pour réactiver le mécanisme de défense (par le noyau) contre les attaques par SYN flooding:
+### user@Server:~$ sudo sysctl -w net.ipv4.tcp_syncookies=1
 
