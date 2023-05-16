@@ -5,7 +5,7 @@ Déployez les 4 pages php dans le même dossier et démarrez ensuite votre serve
 
 ## page1.php
 
-Tout en ouvran les outils web de votre navigateur, appelez la page page1.php. 
+Tout en ouvrant les outils web de votre navigateur, appelez la page page1.php. 
 
 Constatez la présence d'une erreur CORS.
 
