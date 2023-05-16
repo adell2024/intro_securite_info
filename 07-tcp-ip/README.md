@@ -31,7 +31,11 @@ Parameters:
 ## Outil numéro 78 : Reset every TCP packet
 
 Usage: netwox 78 [-d device] [-f filter] [-s spoofip]
+
 Parameters:
+
 -d|--device device  =>device name {Eth0}
+
 -f|--filter filter =>pcap filter
+
 -s|--spoofip spoofip =>IP spoof initialization type {linkbraw}
