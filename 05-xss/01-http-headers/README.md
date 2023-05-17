@@ -1,6 +1,6 @@
 ## xss via http headers
 
-Pour cetet activité, Nou,s aurons besoin de "Burp Suite Community Edition" ; cette suite logicielle (écrite en Java) est installée par défaut avec la distribution Kali.Si vous voulez l'installer dans votre distribution alors rendez-vous au site: https://portswigger.net/burp/communitydownload
+Pour cette activité, Nous aurons besoin de "Burp Suite Community Edition" ; cette suite logicielle (écrite en Java) est installée par défaut avec la distribution Kali.Si vous voulez l'installer dans votre distribution alors rendez-vous au site: https://portswigger.net/burp/communitydownload
 
 ## Découverte de Burp Suite
 
