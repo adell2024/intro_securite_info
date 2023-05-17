@@ -19,8 +19,6 @@ idée: l'injection est possible : si je mets le paramètre p01 à toto, cette de
 ![title](https://github.com/aabda2000/sti3a-security/assets/38082725/d44e7975-45e9-40b6-8888-f1a185d93660)
 
 
-Essayez : p01=</title><svg/onload=alert(1)>
-
 ### Exo 2 : Injection filtrée par un gestionnaire d'événements
 
 https://brutelogic.com.br/gym.php?p04=toto
