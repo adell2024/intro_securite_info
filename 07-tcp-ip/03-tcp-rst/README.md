@@ -27,7 +27,7 @@ Attacker :
 
 sudo netwox 40 -l 192.168.180.136 -m 192.168.180.153 -p 23 -o 33780 -B -q 122558572
 
-Dans Wireshark, on voit passer le segment RST comment venant du client:
+Dans Wireshark, on voit passer le segment RST comme provenant du client 192.168.180.136:
 
 ![tcp4](https://github.com/aabda2000/sti3a-security/assets/38082725/ccdd8f8d-59d0-4677-8169-3a76dbe2f7b5)
 
