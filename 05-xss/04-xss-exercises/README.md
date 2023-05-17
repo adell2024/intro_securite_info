@@ -9,7 +9,7 @@ Aucun secret pour devenir agile en XSS : il faut pratiquer , pratiquer, .....
 Carriage return (\r): %0d || Linefeed (\n): %0a || %25 : % || %26 : & || &apos = %26apos; : ' ||
 %20 : (space) || %23 : "
 
-### Exo 1 : Injecter dans le tag "title" de la page
+### Exo 1 : Injection dans le tag "title" de la page
 
 https://brutelogic.com.br/gym.php?p01=title
 
