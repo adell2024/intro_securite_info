@@ -4,4 +4,4 @@
 
 Plusieurs solutions sont possibles. mais analysons la requête http avec BurpSuite:
 
-<img src="https://github.com/aabda2000/sti3a-security/blob/98df20c1cae6bb4fd019dcd69167e0177e4ec94a/assets/xss4.png"/>
+<img src="assets/xss4.png" class="inline" />
