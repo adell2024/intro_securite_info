@@ -50,6 +50,9 @@ Idée 1: Observer le code source de la page ; répérer la zone contenant
 
 Idée 2 :Cliquez sur le logo "KNOXSS" en bas à droite
 
+Idée 3: la page gym.php valide les URLs selon le schéma PHP (voir https://www.w3schools.com/php/filter_validate_url.asp)
+
+
 <a href="https://www.google.com/search?q=brutelogic"><div id="k"></div></a>
 
 Injecter votre code en suivant le format de la donnée fournie au paramètre p21
