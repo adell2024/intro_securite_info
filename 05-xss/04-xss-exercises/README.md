@@ -9,7 +9,7 @@ Aucun secret pour devenir agile en XSS : il faut pratiquer , pratiquer, .....
 Carriage return (\r): %0d || Linefeed (\n): %0a || %25 : % || %26 : & || &apos = %26apos; : ' ||
 %20 : (space) || %23 : "
 
-### Exo 1 : Injecter dans le tag "title" de la page
+### Exo 1 : Injection dans le tag "title" de la page
 
 https://brutelogic.com.br/gym.php?p01=title
 
@@ -18,8 +18,6 @@ idée: l'injection est possible : si je mets le paramètre p01 à toto, cette de
 
 ![title](https://github.com/aabda2000/sti3a-security/assets/38082725/d44e7975-45e9-40b6-8888-f1a185d93660)
 
-
-Essayez : p01=</title><svg/onload=alert(1)>
 
 ### Exo 2 : Injection filtrée par un gestionnaire d'événements
 
@@ -59,3 +57,10 @@ Injecter votre code en suivant le format de la donnée fournie au paramètre p21
 https://brutelogic.com.br/gym.php?p12=bbbbbbbbbbbbbbbb
 
 Idée: cherchez la chaîne bbbbbbbbbbbbbbbbb dans le code source de la page.fermer le tage script (</script>)
+
+### Exo 6 : Injection DOM
+
+https://brutelogic.com.br/gym.php?p25=RocksRocksRocksRocksRocksRocks
+
+Idée : Consultez le code source de la page : Cherchez la chaîne RocksRocksRocksRocksRocksRocks (valeur du paramètre p25)
+

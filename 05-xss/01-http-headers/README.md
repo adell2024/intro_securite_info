@@ -1,6 +1,6 @@
 ## xss via http headers
 
-Pour cetet activité, Nou,s aurons besoin de "Burp Suite Community Edition" ; cette suite logicielle (écrite en Java) est installée par défaut avec la distribution Kali.Si vous voulez l'installer dans votre distribution alors rendez-vous au site: https://portswigger.net/burp/communitydownload
+Pour cette activité, Nous aurons besoin de "Burp Suite Community Edition" ; cette suite logicielle (écrite en Java) est installée par défaut avec la distribution Kali.Si vous voulez l'installer dans votre distribution alors rendez-vous au site: https://portswigger.net/burp/communitydownload
 
 ## Découverte de Burp Suite
 
@@ -8,7 +8,7 @@ Lancer la suite Burp Suite et dans la foulée lancer navigateur Web qui l'accomp
 
 ![burp1](https://user-images.githubusercontent.com/38082725/236813494-47bcb764-0302-4267-889c-1867abf56e6c.png)
 
-A partir du navigateur, demndez la page https://brutelogic.com.br/lab/header.php
+A partir du navigateur, demandez la page https://brutelogic.com.br/lab/header.php
 
 ![burp2](https://user-images.githubusercontent.com/38082725/236814152-6fe08b39-3f7a-4a45-ba2f-4cb685d11d02.png)
 
@@ -20,7 +20,7 @@ N'hésitez pas à découvir tout le potentiel de ce superbe outil.
 
 ## Terminal Linux
 
-Avec l'outil curl, injectez  "Test: 42" dans les entêtes de la requête http. Veuillez choisir une chaine autre que la mienne( "azerty" ) pour votre injection! 
+Avec l'outil curl, injectez  "Test: 42" dans les entêtes de la requête http. Veuillez choisir une chaine autre que la mienne("azerty" ) pour votre injection! 
 
 curl -iH "Test: 42"  https://brutelogic.com.br/lab/header.php?azerty
 
