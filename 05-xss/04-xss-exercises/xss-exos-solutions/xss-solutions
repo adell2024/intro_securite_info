@@ -1,0 +1,7 @@
+### solutions to some xss exos
+
+## Exo 3 : Injection dans un entête HTTP
+
+Plusieurs solutions sont possibles. mais analysons la requête http avec BurpSuite:
+
+![xss4](https://github.com/aabda2000/sti3a-security/blob/30605f0b33bd16cfec25559f07927b92963800aa/mydocs/assets/xss4.png)
