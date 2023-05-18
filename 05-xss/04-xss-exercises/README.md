@@ -45,8 +45,10 @@ Idée : On parle d'injection URL : et si on regarde le formulaire de la page et 
 
 https://brutelogic.com.br/gym.php?p21=https://www.google.com/search?q=brutelogic
 
-Idée: Observer le code source de la page ; répérer la zone contenant
+Idée 1: Observer le code source de la page ; répérer la zone contenant
 <script src="/file.js"></script>
+
+Idée 2 :Cliquez sur le logo "KNOXSS" en bas à droite
 
 <a href="https://www.google.com/search?q=brutelogic"><div id="k"></div></a>
 
