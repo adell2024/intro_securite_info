@@ -30,7 +30,7 @@ Parfait, l'entête Location a été ajouté aux autres entêtes. Après un forwa
 
 ![xss6](https://github.com/aabda2000/sti3a-security/assets/38082725/e115b5c0-2319-408b-9631-11e0729fbcca)
 
-Exo 5 : Injection dans un lien hypertexte
+## Exo 5 : Injection dans un lien hypertexte
 
 Après injection de la chaîne proposée par l'exo: 
 
@@ -41,17 +41,23 @@ Donc la valeur de l'attribut href de l'élément <a> est la valeur passée en pa
 Si on cherche à injecter une chaîne ainsi:https://brutelogic.com.br/gym.php?p21=<svg/onmouseover=alert(1)>, la valeur de href est vide cette fois: <a href="">...</a>.
 Donc, la page gym.php utilise des fonction de validation PHP pour la chaîne injectée (FILTER_VALIDATE_URL Filter : https://www.w3schools.com/php/filter_validate_url.asp). 
 pour duper le filtre, nous pouvons injecter une chaîne qui commence par "javascript:" : l'intéret est que le code qui vient après "javascript:" sera exécuté en cliquant sur le lien hypertexte <a>. Malheureusement, le filtre FILTER_VALIDATE_URL finit par nettoyer la chaîne à moins d'injecter une chaîne qui commence par "javascript://foo.com?" ou "javascript://c?",...bref une chaîne qui contient aussi "?"sinon elle sera filtrée!
+
+Remarque importante: dans la chaine "javascript://c?", les caractères '//' permet de duper le filtre PHP, mais ils ont une signification particulière en javascript: En effet, la navigateur qui comment d'abord par parser la valeur de l'attribut href="javascript://c? ....", interprète '//' comme le début d'une ligne de commentaire. Pour cette raison, la suite de la chaine doit commencer par un saut à la ligne avec "%250D%250A" qui s'interpète par '\r\n';
+  
   
 voilà des injections qui marchent: 
+  
 https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27%3Csvg/onmouseover=alert(2)%3E%27
-(note: il faut cliquer sur le logo "KNOSS" qui clignote et passer le curseur sur l'espace blanc renvoyé=onmouseover)
+  
+note: il faut cliquer sur le logo "KNOSS" qui clignote et passer le curseur sur l'espace blanc renvoyé=onmouseover
 
 https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27\x3c\x73\x76\x67\x20\x6f\x6e\x6c\x6f\x61\x64\x3d\x61\x6c\x65\x72\x74\x28\x31\x29\x3e%27
   
+note 1: il faut cliquer sur le logo "KNOSS" qui clignote et passer le curseur sur l'espace blanc renvoyé=onmouseover)
+
+note2 : pour décoder la chaîne %27\x3c\x73\x76\x67\x20\x6f\x6e\x6c\x6f\x61\x64\x3d\x61\x6c\x65\x72\x74\x28\x31\x29\x3e%27, nous pouvons utiliser la console du navigateur:
   
- 
-  
-  
+![xss8](https://github.com/aabda2000/sti3a-security/assets/38082725/da18d3db-a6f4-4c2b-9c4a-27f6d81e67c5)
  
   
 
