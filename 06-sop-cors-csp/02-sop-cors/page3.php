@@ -14,7 +14,7 @@
 </body>
 <script type="text/javascript">
     $.ajax({
-            url: "hello_allowed_from_same.php"
+            url: "hello_allowed_from_some.php"
         })
         .done(function(data) {
             $("#result1").html(data);
