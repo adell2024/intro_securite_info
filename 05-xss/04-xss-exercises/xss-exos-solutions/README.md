@@ -42,7 +42,13 @@ Si on cherche à injecter une chaîne ainsi:https://brutelogic.com.br/gym.php?p2
 Donc, la page gym.php utilise des fonction de validation PHP pour la chaîne injectée (FILTER_VALIDATE_URL Filter : https://www.w3schools.com/php/filter_validate_url.asp). 
 pour duper le filtre, nous pouvons injecter une chaîne qui commence par "javascript:" : l'intéret est que le code qui vient après "javascript:" sera exécuté en cliquant sur le lien hypertexte <a>. Malheureusement, le filtre FILTER_VALIDATE_URL finit par nettoyer la chaîne à moins d'injecter une chaîne qui commence par "javascript://foo.com?" ou "javascript://c?",...bref une chaîne qui contient aussi "?"sinon elle sera filtrée!
   
-voilà une injection qui marche: https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27%3Csvg/onmouseover=alert(2)%3E%27
+voilà des injections qui marchent: 
+https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27%3Csvg/onmouseover=alert(2)%3E%27
+(note: il faut cliquer sur le logo "KNOSS" qui clignote et passer le curseur sur l'espace blanc renvoyé=onmouseover)
+
+https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A'\x3c\x73\x76\x67\x20\x6f\x6e\x6c\x6f\x61\x64\x3d\x61\x6c\x65\x72\x74\x28\x31\x29\x3e'
+  
+ 
   
   
  
