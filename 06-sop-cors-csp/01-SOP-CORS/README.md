@@ -30,7 +30,7 @@ Rendons-nous sur le site webhoo.site:
 
 Nous notons qu'une requête GET a été bien réçu par webhook.site : fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a"). Cette fonction envoie, par défaut, une demande de type GET à webhook. la demande est autoirsée par le navigateur : mais du fait sa politique SOP, leserveur ne peut pas traiter des requêtes d'origines différentes, et en informe le navigateur qui à son tour répond par un message d'avertissement ( CORS policy etc..). 
 
-Dans certains cas, le navigateur peut demander au serveur si celui-ci autorise l'usage , par exemple, de la méthode DELETE dans la requête HTTP, avant d'envoyer la "vraie" requête avec la méthode DELETE:
+Dans certains cas, le navigateur commence par envoyer une requête "preflight" au serveur demandant si celui-ci autorise l'usage , par exemple, de la méthode DELETE dans la requête HTTP, avant d'envoyer la "vraie" requête avec la méthode DELETE:
 
 fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
 {
