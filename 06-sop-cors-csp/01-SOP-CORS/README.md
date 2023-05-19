@@ -28,9 +28,9 @@ Rendons-nous sur le site webhoo.site:
 
 ![webhook4](https://user-images.githubusercontent.com/38082725/236846766-9b61eb26-b3c2-42d2-b1b6-c4952e1e383d.png)
 
-Nous notons qu'une requête GET a été bien réçu par webhook.site : fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a") envoie par défaut la demande avec la méthode GET.Dans ce cas précis, la navigateur a birn envoyé la requête telle quelle au domaine webhook.site qui à son tour l'a bien récu : mais du fait sa politique SOP, ne peut pas traiter des requêtes d'origine différente, et en informe le navigateur qui à son tour répond par un message d'avertissement ( CORS policy etc..). 
+Nous notons qu'une requête GET a été bien réçu par webhook.site : fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a"). Cette fonction envoie, par défaut, une demande de type GET à webhook. la demande est autoirsée par le navigateur : mais du fait sa politique SOP, leserveur ne peut pas traiter des requêtes d'origines différentes, et en informe le navigateur qui à son tour répond par un message d'avertissement ( CORS policy etc..). 
 
-Dans certains cas, le navigateur du client peut demander au serveur si celui-ci autorise l'usage , par exemple, de la méthode DELETE dans la requête HTTP, avant d'envoyer la "vraie" requête avec la méthode DELETE:
+Dans certains cas, le navigateur peut demander au serveur si celui-ci autorise l'usage , par exemple, de la méthode DELETE dans la requête HTTP, avant d'envoyer la "vraie" requête avec la méthode DELETE:
 
 fetch("https://webhook.site/098a8825-5880-4c57-a235-13c48aa4345a", 
 {
