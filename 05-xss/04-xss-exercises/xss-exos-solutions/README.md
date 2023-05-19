@@ -30,3 +30,25 @@ Parfait, l'entête Location a été ajouté aux autres entêtes. Après un forwa
 
 ![xss6](https://github.com/aabda2000/sti3a-security/assets/38082725/e115b5c0-2319-408b-9631-11e0729fbcca)
 
+Exo 5 : Injection dans un lien hypertexte
+
+Après injection de la chaîne proposée par l'exo: 
+
+![xss7](https://github.com/aabda2000/sti3a-security/assets/38082725/87a9e664-9cc9-4194-b54b-700fd8ebedd9)
+
+Donc la valeur de l'attribut href de l'élément <a> est la valeur passée en parmètre de l'URL.
+  
+Si on cherche à injecter une chaîne ainsi:https://brutelogic.com.br/gym.php?p21=<svg/onmouseover=alert(1)>, la valeur de href est vide cette fois: <a href="">...</a>.
+Donc, la page gym.php utilise des fonction de validation PHP pour la chaîne injectée (FILTER_VALIDATE_URL Filter : https://www.w3schools.com/php/filter_validate_url.asp). 
+pour duper le filtre, nous pouvons injecter une chaîne qui commence par "javascript:" : l'intéret est que le code qui vient après "javascript:" sera exécuté en cliquant sur le lien hypertexte <a>. Malheureusement, le filtre FILTER_VALIDATE_URL finit par nettoyer la chaîne à moins d'injecter une chaîne qui commence par "javascript://foo.com?" ou "javascript://c?",...bref une chaîne qui contient aussi "?"sinon elle sera filtrée!
+  
+voilà une injection qui marche: https://brutelogic.com.br/gym.php?p21=javascript://c?%250D%250A%27%3Csvg/onmouseover=alert(2)%3E%27
+  
+  
+ 
+  
+
+
+
+
+
