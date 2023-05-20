@@ -14,4 +14,20 @@ Et là, le navigateur entre en jeu. En essayant d'afficher l'image, il va aller 
 
 Récupérer les pages web home.php , common.php et change_email.
 
-la page web cs
+la page web csrf_attack simule une attaque de type csrf.
+
+Essayez cette attaque et constatez le changement de mail à l'insu de l'utlisateur Mat authentifié.
+
+## Challenge
+
+Cloner le site https://github.com/jrozner/csrf-demo.git 
+
+Démarrer le serveur web
+
+Cette application simule des transferts d'argent entre des comptes bancaires.
+
+Le site est vulnérable aux attaques CSRF.
+
+utlisateur authetifié: test/test
+
+Trouver la faille et développer votre attaque (sous forme de page php ou un mail pour duper l'utlisateur test, ..)
