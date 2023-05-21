@@ -9,4 +9,8 @@ Lorsqu’un utilisateur est authentifié, un jeton lui est émis. Lorsqu’un ut
 
 ## Eude de cas
 
-Le formulaire dans la page index.php contient une 
+Le formulaire dans la page index.php génère un token anti-falsification et le cache dans un champ et dans la session. La page process.php vérifie que le token renvoyé par le formulaire et le token de la session sont égaux. 
+
+## Challenge
+
+Sécurisez avec un token ani-csrf la page change_email.php du chapitre 05-csrf. 
