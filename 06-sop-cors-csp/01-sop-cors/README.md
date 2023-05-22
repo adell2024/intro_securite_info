@@ -5,6 +5,8 @@ Cross-Origin Resource Sharing
 
 Le Same origin policy est un mécanisme de sécurité présent dans les navigateurs Web. Ce mécanisme empêche une origine (un site Web) d’interagir avec les données d’une autre origine. Une origine correspond à un protocole, un port et un hôte.
 
+![cors1](https://github.com/aabda2000/sti3a-security/assets/38082725/f7b7157c-79ea-421e-aad6-125bb56f0cf4)
+
 ## Exemple 
 
 Allez sur le site https://webhook.site/ et récupérez (copiez) cette url unique :
