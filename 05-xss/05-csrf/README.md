@@ -30,4 +30,9 @@ Le site est vulnérable aux attaques CSRF.
 
 utlisateur authetifié: test/test
 
-Trouver la faille et développer votre attaque (sous forme de page php ou un mail pour duper l'utlisateur test, ..)
+Trouver la faille et développer vos attaques CSRF :
+
+a) En utlisant le tag img et son attribut src
+
+b) En utlisant un formulaire html : ce formulaire est hébérgé par le site de l'attaquant
+
