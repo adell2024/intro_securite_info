@@ -57,6 +57,7 @@ Maintenant, nous accédons à la page somepageA.php à partir d'un lien se trouv
 ![samesite4](https://github.com/aabda2000/sti3a-security/assets/38082725/a71bf525-a0d0-43ad-aea7-b0ba7fa4cd23)
 
 Questions:
+
 pourquoi le compteur lax_count a été incrémenté?
 
 Pourquoi le compteur strict_count n'a pas bougé ?
