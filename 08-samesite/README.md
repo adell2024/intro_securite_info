@@ -44,15 +44,20 @@ Passons maitenant à la pratique:
 
 Remarque: le cookie avec l'attribut samesite=non n'a pas été transmis par Chrome (la raison est que Chrome exige l'attribut "secure" pour quand samesite vaut none; secure=SSL).
 
-Rafraichssons la page somepageA.php:
+Rafraichssons la page somepageA.php plusieurs fois:
 
+![samesite2](https://github.com/aabda2000/sti3a-security/assets/38082725/b18d7deb-1954-4589-8267-667cc4844ebe)
 
 
 Les compteurs respectifs ont été incrémentés.
 
 
-Maintenant, nous accédons à la page somepageA.php à partir d'un lien se trouvant sur un domaine différent (la page indexB.php):
+Maintenant, nous accédons à la page somepageA.php à partir d'un lien se trouvant sur un domaine différent (sur la page indexB.php):
 
-![samesite3](https://github.com/aabda2000/sti3a-security/assets/38082725/32f5bb9c-b358-4ca3-864e-179d0833a3d1)
+![samesite4](https://github.com/aabda2000/sti3a-security/assets/38082725/a71bf525-a0d0-43ad-aea7-b0ba7fa4cd23)
+
+
+
+
 
 
