@@ -20,5 +20,39 @@ Assez parler...
 
 ## Etude de cas
 
+Le site domainA.fr est consitué des pages web suivantes:
+homeA.php et somePageA.php
+
+Le site domaineB.fr est constitué d'une seule page web: indexB.php
+
+La page homeA.php contient la ligne:
+
+setcookie('myCookie', 'worked', ['expires' => 0, 'path' => '/', 'domain' => 'asterix',  'httponly' => true, 'samesite' => 'lax']);
+
+Je crée une cookie avec l'attribut samesite='lax'.
+
+Les valeurs possibles de attribut sont: None, lax et strict.
+
+lax : le cookie est envoyé lorsqu’un utilisateur accède à l’URL de domaineA à partir d’un site externe, par exemple, en suivant un lien
+strict : Si la requête provient d’une URL différente de celle de l’emplacement actuel, aucun des cookies marqués avec l'attribut n’est envoyé.
+
+Passons maitenant à la pratique:
+
+1 - j'accède à la page homeA.php directement qui me renvoie à somepageA.php:
+
+![samesite1](https://github.com/aabda2000/sti3a-security/assets/38082725/6defcacb-7cf9-493b-aedd-81ca0863657f)
+
+Remarque: le cookie avec l'attribut samesite=non n'a pas été transmis par Chrome (la raison est que Chrome exige l'attribut "secure" pour quand samesite vaut none; secure=SSL).
+
+Rafraichssons la page somepageA.php:
+
+
+
+Les compteurs respectifs ont été incrémentés.
+
+
+Maintenant, nous accédons à la page somepageA.php à partir d'un lien se trouvant sur un domaine différent (la page indexB.php):
+
+![samesite3](https://github.com/aabda2000/sti3a-security/assets/38082725/32f5bb9c-b358-4ca3-864e-179d0833a3d1)
 
 
