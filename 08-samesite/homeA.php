@@ -2,7 +2,7 @@
 //session name
 session_name('sessionCookie');
 session_set_cookie_params(['lifetime' => 0, 'path' => '/', 'domain' => '.asterix',  'httponly' => true, 'samesite' => 'lax']);
-session_save_path($_SERVER['DOCUMENT_ROOT'] . '/sessions');
+//session_save_path($_SERVER['DOCUMENT_ROOT'] . '/sessions');
 session_start();
 
 //session stuff
