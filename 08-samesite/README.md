@@ -42,7 +42,7 @@ Passons maitenant à la pratique:
 
 ![samesite1](https://github.com/aabda2000/sti3a-security/assets/38082725/6defcacb-7cf9-493b-aedd-81ca0863657f)
 
-Remarque: le cookie avec l'attribut samesite=non n'a pas été transmis par Chrome (la raison est que Chrome exige l'attribut "secure" pour quand samesite vaut none; secure=SSL).
+Remarque: le cookie avec l'attribut "samesite=none" n'a pas été transmis par Chrome (la raison est que Chrome exige l'attribut "secure" quand samesite vaut none; secure=SSL).
 
 Rafraichssons la page somepageA.php plusieurs fois:
 
