@@ -9,7 +9,7 @@
 
 <body>
     <h1> cette page appartient au site domaineB.fr </h1>
-    <a href='http://asterix:3000/somepage.php'>asterix Site</a>
+    <a href='http://asterix:3000/somepageA.php'>asterix Site</a>
 </body>
 
 </html>
