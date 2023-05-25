@@ -16,7 +16,10 @@ Si le site domainB.fr était le site de evil.com,vous pourriez imaginez sans gra
 
 L'idée du flag "Samesite" apposé sur les cookies est de maitriser/limiter la circulation des cookies entre des domaines différents. 
 
-Assez parler...
+![samesite5](https://github.com/aabda2000/sti3a-security/assets/38082725/0a8139be-eef7-4974-bfe0-866978366f91)
+
+
+Assez parlé...
 
 ## Etude de cas
 
