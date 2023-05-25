@@ -19,7 +19,12 @@ L'idée du flag "Samesite" apposé sur les cookies est de maitriser/limiter la c
 ![samesite5](https://github.com/aabda2000/sti3a-security/assets/38082725/0a8139be-eef7-4974-bfe0-866978366f91)
 
 
-Assez parlé...
+Pour simuler deux domaines différents dans le même machine, il faudrait créer, par exemple, deux hôtes virtuels gérés par Apache2:
+
+voilà mes fichiers de configuration pour les deux domaines mabanque.fr et evil.fr :
+
+![samesite6](https://github.com/aabda2000/sti3a-security/assets/38082725/19be10cb-62e7-4e41-b8c7-3539aca3f3a5)
+
 
 ## Etude de cas
 
@@ -58,6 +63,7 @@ Les compteurs respectifs ont été incrémentés.
 Maintenant, nous accédons à la page somepageA.php à partir d'un lien se trouvant sur un domaine différent (sur la page indexB.php):
 
 ![samesite4](https://github.com/aabda2000/sti3a-security/assets/38082725/a71bf525-a0d0-43ad-aea7-b0ba7fa4cd23)
+
 
 ## Challenge
 
