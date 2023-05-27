@@ -8,8 +8,12 @@
 </head>
 
 <body>
-    <h1> cette page appartient au site domaineB.fr </h1>
-    <a href='http://asterix:3000/somepage.php'>asterix Site</a>
+    <h1> cette page appartient au site evil.fr </h1>
+    <a href='http://mabanque.fr/somepageA.php'>mabanque</a>
+
+    <form metho="post" action="http://mabanque.fr/somepageA.php">
+        post method <input type="submit">
+    </form>
 </body>
 
 </html>

@@ -16,7 +16,15 @@ Si le site domainB.fr était le site de evil.com,vous pourriez imaginez sans gra
 
 L'idée du flag "Samesite" apposé sur les cookies est de maitriser/limiter la circulation des cookies entre des domaines différents. 
 
-Assez parler...
+![samesite5](https://github.com/aabda2000/sti3a-security/assets/38082725/0a8139be-eef7-4974-bfe0-866978366f91)
+
+
+Pour simuler deux domaines différents dans le même machine, il faudrait créer, par exemple, deux hôtes virtuels gérés par Apache2:
+
+voilà mes fichiers de configuration pour les deux domaines mabanque.fr et evil.fr :
+
+![samesite6](https://github.com/aabda2000/sti3a-security/assets/38082725/19be10cb-62e7-4e41-b8c7-3539aca3f3a5)
+
 
 ## Etude de cas
 
@@ -42,7 +50,7 @@ Passons maitenant à la pratique:
 
 ![samesite1](https://github.com/aabda2000/sti3a-security/assets/38082725/6defcacb-7cf9-493b-aedd-81ca0863657f)
 
-Remarque: le cookie avec l'attribut samesite=non n'a pas été transmis par Chrome (la raison est que Chrome exige l'attribut "secure" pour quand samesite vaut none; secure=SSL).
+Remarque: le cookie avec l'attribut "samesite=none" n'a pas été transmis par Chrome (la raison est que Chrome exige l'attribut "secure" quand samesite vaut none; secure=SSL).
 
 Rafraichssons la page somepageA.php plusieurs fois:
 
@@ -56,11 +64,14 @@ Maintenant, nous accédons à la page somepageA.php à partir d'un lien se trouv
 
 ![samesite4](https://github.com/aabda2000/sti3a-security/assets/38082725/a71bf525-a0d0-43ad-aea7-b0ba7fa4cd23)
 
-Questions:
+
+## Challenge
 
 pourquoi le compteur lax_count a été incrémenté?
 
 Pourquoi le compteur strict_count n'a pas bougé ?
+
+Quel est l'effet si je  mets la cookie sessionCookie en mode samesite=strict?
 
 
 
