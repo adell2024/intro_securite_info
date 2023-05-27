@@ -39,5 +39,16 @@ Ce qui a empêché notre script de s'exécuter est la mise place d'une politique
 
 Les politiques CSP sont définies sur le serveur et envoyées soit en tant que entête dans la réponse HTTP ou bien en tant que balise HTML "meta" avec http-equiv et l'attribut de contenu "content". Les Navigateurs Web sont priés ensuite de les appliquer.
 
+## Stratégie CSP
 
+&lt;meta
+
+      http-equiv="Content-Security-Policy"
+      
+      content="default-src 'none'; script-src 'unsafe-eval' 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf'; style-src 'nonce-da02fcdb0523d8db8c846f0bb900ca0e'"
+
+/&gt;
+
+default-src 'none';
+La stratégie CSP suivante demande au navigateur 
 
