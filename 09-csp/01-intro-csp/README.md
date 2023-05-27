@@ -12,7 +12,7 @@ Essayons  le paramètre "html": https://challenge-1021.intigriti.io/challenge/ch
 
 Rien vraiment de méchant: nous avons juste réeusi à injecter la chaîne "nice protection".
 
-Essayons avec une nouvelle chaîne :"<a href="javascript:alert(document.domain)">Click Me</a>"
+Essayons avec une nouvelle chaîne :&lt;a href="javascript:alert(document.domain)"&gt;Click Me&lt;/a&gt;
 
 https://challenge-1021.intigriti.io/challenge/challenge.php?html=%3Ca%20href%3D%22javascript%3Aalert%28document.domain%29%22%3EClick%20Me%3C%2Fa%3E
 
