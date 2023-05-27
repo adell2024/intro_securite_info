@@ -16,3 +16,9 @@ Essayons avec une nouvelle chaîne :"<a href="javascript:alert(document.domain)"
 
 https://challenge-1021.intigriti.io/challenge/challenge.php?html=%3Ca%20href%3D%22javascript%3Aalert%28document.domain%29%22%3EClick%20Me%3C%2Fa%3E
 
+![csp03](https://github.com/aabda2000/sti3a-security/assets/38082725/8c16a228-48aa-4108-8db3-978f3c148535)
+
+En cliquant sur "Click Me", le script ne s'exécute pas.
+
+Pourquoi ?
+
