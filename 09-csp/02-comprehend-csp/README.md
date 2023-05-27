@@ -29,7 +29,7 @@ Remplacez la valeur prédédente de la directive script-src dans l'attribut cont
 content="default-src 'none';  script-src 'nonce-123ab345';"
 </code>
 
-Ajoutez le nonce au tag script. Décomnentez la première ligne dans le script. voilà la page login.php final:
+Ajoutez le nonce au tag script. Décomnentez la première ligne dans le script. voilà la page login.php finale:
 <code>
 <script nonce='123ab345'>
     document.getElementById("password").onkeyup = check; //décommentez cette ligne
