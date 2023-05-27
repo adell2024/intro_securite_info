@@ -6,12 +6,13 @@ Récupérer les deux pages login.php et welcome.php
 
 Démarrer une serveur web (php -S IP:5000) par exemple
 
-Vérifier que la méthode javascript "check())" est bien appelée lors de la saisie du password.
+Vérifier que la méthode javascript "check()" est bien appelée lors de la saisie du password.
 
 
 ## Décommenter la ligne meta de login.php
 
-Expliquer pour quelle raison la méthode check() est boquée
+Expliquer pour quelle raison la méthode check() est boquée.
+
 Observez les messages de Chrome lors de l'appel de l'URl http://IP:5000/login.php
 
 ## Ajout d'une directive
