@@ -8,7 +8,6 @@ Démarrer une serveur web (php -S IP:5000) par exemple
 
 Vérifier que la méthode javascript "check()" est bien appelée lors de la saisie du password.
 
-
 ## Décommenter la ligne meta de login.php
 
 Expliquer pour quelle raison la méthode check() est boquée.
@@ -29,13 +28,7 @@ Remplacez la valeur prédédente de la directive script-src dans l'attribut cont
 content="default-src 'none';  script-src 'nonce-123ab345';"
 </code>
 
-Ajoutez le nonce au tag script. Décomnentez la première ligne dans le script. voilà la page login.php finale:
-<code>
-<script nonce='123ab345'>
-    document.getElementById("password").onkeyup = check; //décommentez cette ligne
-    function check() {
-        var password = document.getElementById("password").value;
-        alert(password);
-    }
-</script>
-</code>
+Ajoutez le nonce au tag script. Décomentez la première ligne dans le script. voilà la page login.php finale:
+
+![csp6](https://github.com/aabda2000/sti3a-security/assets/38082725/c8f0d089-dba4-43f7-b77d-57c6341fbe75)
+
