@@ -1,4 +1,4 @@
-## Intro to CSP
+## Cas d'étude
 
 Ouvrez dans un nouvel onlget l'URL suivante : https://challenge-1021.intigriti.io/challenge/challenge.php
 
@@ -32,4 +32,10 @@ Je vous montre le tag "meta" de la page HTML:
 ![csp5](https://github.com/aabda2000/sti3a-security/assets/38082725/71b1bcb2-79ce-45af-83b6-c20a024e2424)
 
 Ce qui a empêché notre script de s'exécuter est la mise place d'une politique de sécurité des contenus (CSP)!
+
+## CSP
+
+"Content Security Policy" permet de définir une stratégie de contrôle des accès aux ressources atteignables d’un site par l’application de restrictions sous forme de "liste blanche", réduisant ainsi le risque d’apparition et l’exploitabilité de vulnérabilités XSS
+
+
 
