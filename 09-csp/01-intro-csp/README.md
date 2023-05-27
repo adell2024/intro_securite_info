@@ -6,5 +6,5 @@ Ouvrez dans un nouvel onlget l'URL suivante : https://challenge-1021.intigriti.i
 
 La description de la page indique clairement que la page challenge.php attend deux paramètres : html et xss.
 
-Essayons  le paramètre "html": https://challenge-1021.intigriti.io/challenge/challenge.php?html=<h1>nice protection!</h1>
+Essayons  le paramètre "html": https://challenge-1021.intigriti.io/challenge/challenge.php?html=%3Ch1%3Enice%20protection%21%3C%2Fh1%3E
 
