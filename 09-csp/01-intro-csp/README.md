@@ -18,7 +18,18 @@ https://challenge-1021.intigriti.io/challenge/challenge.php?html=%3Ca%20href%3D%
 
 ![csp03](https://github.com/aabda2000/sti3a-security/assets/38082725/8c16a228-48aa-4108-8db3-978f3c148535)
 
-En cliquant sur "Click Me", le script ne s'exécute pas.
+
+Notre injection a été bien embarquée dans la page :
+
+![csp4](https://github.com/aabda2000/sti3a-security/assets/38082725/6f16a774-f8ea-4911-bfc6-7f3429a73074)
+
+Mais, en cliquant sur "Click Me", le script ne s'exécute pas.
 
 Pourquoi ?
+
+Je vous montre le tag "meta" de la page HTML: 
+
+![csp5](https://github.com/aabda2000/sti3a-security/assets/38082725/71b1bcb2-79ce-45af-83b6-c20a024e2424)
+
+Ce qui a empêché notre script de s'exécuter est la mise place d'une politique de sécurité des contenus (CSP)!
 
