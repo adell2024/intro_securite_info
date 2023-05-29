@@ -13,11 +13,11 @@ En testant l'appli, avec Chrome, j'obtiens les résulats suivants:
 
 Pour quelle raison le navigateur a déclenché cette protection? quel script est en cause?
 
-n'oubliez pas tester le bouton "Register" qui déclencherait la fonction "leak" sur l'événement "onsubmit".
+n'oubliez pas de tester le bouton "Register" qui déclencherait la fonction "leak" sur l'événement "onsubmit".
 
 ## Test 2
 
-Ajouter le nonce adéquant pour permettre l'exécution du script. 
+Ajouter le "nonce" adéquant pour permettre l'exécution du script. 
 
 Refaire le Test...
 
