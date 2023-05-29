@@ -43,5 +43,26 @@ Sera "traduit" comme :
 
 Oui..le navigateur génère la balise de fermeture de l'élément "diva" en englobant l'élément "div" contenant le texte "hello".
 
+f) les deux sections à étudier:
+<pre>
+ &lt;div id="html" class="text">
+ &lt;h1 class="light">
+ ...</pre>
+ 
+ Et 
+ 
+<pre>
+e = `)]}'` + new URL(location.href).searchParams.get("xss");
+c = document.getElementById("body").lastElementChild;
+if (c.id === "intigriti") {
+    l = c.lastElementChild;
+    i = l.innerHTML.trim();
+    f = i.substr(i.length - 4);
+    e = f + e;
+}
+let s = document.createElement("script");
+s.type = "text/javascript";
+s.appendChild(document.createTextNode(e));
+document.body.appendChild(s);</pre>
 Armé avec ces connaissances, trouvez la formule "magique" pour déjouer les protections CSP
 
