@@ -17,8 +17,8 @@ session_start(); ?>
         <input type="submit" value="Register" />
     </form>
 
-    <h2> load remote script status</h2>
-    <p type="text" id="box" name="box" />
+    <h2> load remote script status:</h2>
+    <p id="box" name="box" />
 </body>
 
 </html>|
