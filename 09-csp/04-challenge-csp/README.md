@@ -25,7 +25,7 @@ https://challenge-1021.intigriti.io/challenge/challenge.php?html=test&xss=test
 e) N'oubliez pas la régle concernant la fonction document.createElement("script") en lien avec 'strict-dynamic'
 
 
-d) Un particularité des navigateurs:
+d) Une particularité des navigateurs:
 
 le code html suivant:
 
