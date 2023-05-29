@@ -10,7 +10,7 @@ session_start(); ?>
 
 <body id="body">
 
-    <form id=" register_form" method="POST" action="welcome.php">
+    <form id="register_form" method="POST" action="welcome.php">
         <h1>Register</h1>
         <input type="text" id="user_name" name="user_name" />
         <input type="password" id="password" name="password" onkeyup="check()" />
