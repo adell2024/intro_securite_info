@@ -22,6 +22,9 @@ https://challenge-1021.intigriti.io/challenge/challenge.php?xss=test
 
 https://challenge-1021.intigriti.io/challenge/challenge.php?html=test&xss=test
 
+e) N'oubliez pas la régle concernant la fonction document.createElement("script") en lien avec 'strict-dynamic'
+
+
 d) Un particularité des navigateurs:
 
 le code html suivant:
@@ -37,4 +40,8 @@ Sera "traduit" comme :
 <pre>&lt;diva&gt;
   &lt;div>hello&lt;/div>
 &lt;/diva&gt;</pre>
+
+Oui..le navigateur génère la balise de fermeture de l'élément "diva" en englobant l'élément "div" contenant le texte "hello".
+
+Armé avec ces connaissances, trouvez la formule "magique" pour déjouer les protections CSP
 
