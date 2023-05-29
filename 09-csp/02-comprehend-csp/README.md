@@ -33,3 +33,14 @@ Ajoutez le nonce au tag script. Décomentez la première ligne dans le script. v
 ![csp6](https://github.com/aabda2000/sti3a-security/assets/38082725/c8f0d089-dba4-43f7-b77d-57c6341fbe75)
 
 Vérifier l'appel à la fonction "check()"
+
+## script.js et style.css
+
+La page login.php devient
+
+![csp7](https://github.com/aabda2000/sti3a-security/assets/38082725/8286ad47-f26c-413e-a802-98167d033987)
+
+Vérifiez que l'appel à la fonction JS fonctionne et la feuille de style est bien appliquée.
+
+
+
