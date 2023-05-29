@@ -7,7 +7,7 @@ Votre objectif est d'injecter le code alert(document.domain) ou alert(1).
 Sur Internet des solutions existent: Mais franchement quel est l'intérêt de chercher la solution avant d'essayer de le résoudre vous-même le challenge.
 
 
-Quelques notes pour vous aider dans votre investigation :
+Quelques notes pour vous aider dans votre investigation et vous faire gagner du temps:
 
 a) Observez le tag meta et la politique CSP de protection mise en oeuvre
 
