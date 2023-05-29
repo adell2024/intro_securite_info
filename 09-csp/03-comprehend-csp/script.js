@@ -23,7 +23,7 @@ function createScript() {
   script.onload = () => {
     console.log("Script loaded successfuly");
     const box = document.getElementById("box");
-    box.textContent = "The script has loaded.";
+    box.textContent = "The script JQuery.min.js has loaded.";
   };
 
   script.onerror = () => {
