@@ -13,7 +13,7 @@ a) Observez le tag meta et la politique CSP de protection mise en oeuvre
 
 b) Les nonces changent à chaque requête http ( ce qui est le cas normal)
 
-c) L'URL accepte les deux paramètres html et xss: Essayez-les séparément et ensemble...
+c) L'URL accepte les deux paramètres html et xss: Essayez-les séparément et ensemble...la solution emploie les deux paramètres
 
 exemples:
 https://challenge-1021.intigriti.io/challenge/challenge.php?html=test
