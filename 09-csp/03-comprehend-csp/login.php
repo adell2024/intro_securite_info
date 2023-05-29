@@ -5,7 +5,7 @@ session_start(); ?>
 <head>
     <title>BOOOOOOO!</title>
     <link rel="stylesheet" href="style.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none' ; script-src 'self' 'nonce-uG2bsk6JIH923nsvp01n24KE'  ; style-src 'self' ;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none' ; script-src 'self' 'nonce-uG2bsk6JIH923nsvp01n24KE' 'strict-dynamic' ; style-src 'self' ;" />
 </head>
 
 <body id="body">
