@@ -13,7 +13,13 @@ En testant l'appli, avec Chrome, j'obtiens les résulats suivants:
 
 Pour quelle raison le navigateur a déclenché cette protection? quel script est en cause?
 
-n'oubliez pas de tester le bouton "Register" qui déclencherait la fonction "leak" sur l'événement "onsubmit".
+N'oubliez pas de tester le bouton "Register" qui déclencherait la fonction "leak" sur l'événement "onsubmit".
+
+<pre>
+NOTE IMPORTANTE :
+
+'strict-dynamic' a été défini, ce qui signifie qu'en général, un script ne sera exécuté que s'il est fourni avec un jeton à usage unique approuvé (nonce).Mais............ il existe une exception à la règle dynamique stricte. Cette exception permet d'exécuter du code JavaScript s'il est créé à l'aide de la fonction document.createElement("script")
+</pre>
 
 ## Test 2
 
