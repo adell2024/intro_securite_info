@@ -2,7 +2,7 @@
 
 ## Certificats SSL
 
-Générez les certifcats pour le sit-a.com et site-b.com :
+Générez les certifcats aux sites site-a.com et site-b.com :
 
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/a_server.key -out /etc/ssl/certs/a_server.crt
 
@@ -10,7 +10,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 ## Définir les vhost
 
-dans le dossier /etc/apache2/sites-available ajouter le fichier de configuration cors.com.conf
+Dans le dossier /etc/apache2/sites-available ajouter le fichier de configuration cors.com.conf
 
 Activer les deux sites: sudo a2ensite cors.com.conf
 
@@ -30,6 +30,7 @@ Redémarrez votre serveur apache : sudo systemctl restart apach2.
 ## Comment naviguer ?
 
 Dans un onglet, on ouvre le site "site-a" et vous cliquez sur un des boutons et vous observez les messages dans Chrome (outils de dév). 
+
 Dans un autre onlget, vous ouvrez le site-b : page 3-show.html
 
 APrès chauqe tes, vous videz le cache récnt de votre navigateur (ce n'est pas obligatoire mais les observations sont ainsi plus claires)
