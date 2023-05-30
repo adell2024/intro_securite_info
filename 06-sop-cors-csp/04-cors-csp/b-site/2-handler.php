@@ -9,10 +9,7 @@ if (array_key_exists("HTTP_ORIGIN", $_SERVER)) {
 }
 
 // (B) CHECK ALLOWED DOMAINS
-if (!in_array(
-    parse_url($origin, PHP_URL_HOST),
-    ["site-a.com", "site-b.com"]
-)) {
+if (!in_array(parse_url($origin, PHP_URL_HOST),["site-a.com", "site-b.com"])) {
     http_response_code(403);
     exit("$origin not allowed");
 }
@@ -43,4 +40,5 @@ setcookie("It-stric", "Works", [
     "samesite" => "strict"
 ]);
 
+// (D) FYI
 echo "OK " . $_SERVER["HTTP_ORIGIN"] . "," . $_SERVER["HTTP_REFERER"] . "," . $_SERVER["REMOTE_ADDR"];
