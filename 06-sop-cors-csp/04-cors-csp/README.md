@@ -8,7 +8,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/b_server.key -out /etc/ssl/certs/b_server.crt
 
-## Définir les vhost
+## Définir les vhosts
 
 Dans le dossier /etc/apache2/sites-available ajouter le fichier de configuration cors.com.conf
 
