@@ -1,4 +1,4 @@
-## Challenge CORS CORB CSP
+## Challenge CORS CORB SameSite CSP
 
 ## Certificats SSL
 
