@@ -1,6 +1,6 @@
 ## Challenge CORS CSP
 
-## 1 Préparation: Certificats SSL
+## Certificats SSL
 
 Générez les certifcats pour le sit-a.com et site-b.com :
 
@@ -8,6 +8,28 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/b_server.key -out /etc/ssl/certs/b_server.crt
 
-## 2 Préparation: Définir les vhost
+## Définir les vhost
+
+dans le dossier /etc/apache2/sites-available ajouter le fichier de configuration cors.com.conf
+
+Activer les deux sites: sudo a2ensite cors.com.conf
+
+
+## Définir les sites
+
+Créer les deux dossiers /var/www/site-a.com et /var/www/site-b.com. Ensuite, déployer la page 1-fecth.html dans /var/www/site-a.com et les deux pages 2-handler.php + 3-show.html dans /var/www/site-b.com
+
+## Définir les noms
+
+Dans le fichier /etc/hosts
+votre_IP    site-a.com
+vote_IP     site-b.com
+
+Redémarrez votre serveur apache : sudo systemctl restart apach2. Accéder aux sites a et b et accépter les certifcats auto-signés.
+
+## Challenge
+
+
+
 
 
