@@ -27,9 +27,14 @@ vote_IP     site-b.com
 
 Redémarrez votre serveur apache : sudo systemctl restart apach2. 
 
+## Comment naviguer ?
 
+Dans un onglet, on ouvre le site "site-a" et vous cliquez sur un des boutons et vous observez les messages dans Chrome (outils de dév). 
+Dans un autre onlget, vous ouvrez le site-b : page 3-show.html
 
-## Challenge : Utlisez Chrome
+APrès chauqe tes, vous videz le cache récnt de votre navigateur (ce n'est pas obligatoire mais les observations sont ainsi plus claires)
+
+## Challenge : Utilisez Chrome
 
 Ouvrez les outlis de dév de Chrome
 
