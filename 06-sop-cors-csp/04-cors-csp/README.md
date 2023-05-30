@@ -33,7 +33,7 @@ Dans un onglet, on ouvre le site "site-a" et vous cliquez sur un des boutons et 
 
 Dans un autre onlget, vous ouvrez le site-b : page 3-show.html
 
-APrès chauqe tes, vous videz le cache récnt de votre navigateur (ce n'est pas obligatoire mais les observations sont ainsi plus claires)
+Après chaque test, vous videz le cache récent de votre navigateur (ce n'est pas obligatoire mais les observations seront ainsi plus claires)
 
 ## Challenge : Utilisez Chrome
 
@@ -41,10 +41,10 @@ Ouvrez les outlis de dév de Chrome
 
 Accéder aux sites a et b et accépter les certifcats auto-signés.
 
-Avant de cliquez sur bouton, observez les "erreurs" affichées par Chrome:
+Avant de cliquez sur un des boutons, observez les exceptions levées par Chrome:
 
 ![cors2](https://github.com/aabda2000/sti3a-security/assets/38082725/c3e7d608-9923-48ad-ae5e-97db105e121a)
 
-Identifiez et Corrigez ces "erreurs" (en corrigeant une "erreur" d'autres apparaîtront)
+Identifiez et Corrigez ces exceptions (en corrigeant une exception d'autres apparaîtront)
 
 
