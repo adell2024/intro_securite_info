@@ -35,12 +35,10 @@
 </script>
 <script>
   function demo1() {
-    // (B) CORS FETCH TO SITE B
     fetch("https://site-b.com/2-handler.php", {
       mode: "cors",
       credentials: "include",
     })
-      // (C) FOR DEBUGGING, CONSOLE LOG ALL RESPONSES.
       .then((res) => {
         console.log(res);
         return res.text();
