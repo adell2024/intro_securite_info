@@ -25,10 +25,22 @@ Dans le fichier /etc/hosts
 votre_IP    site-a.com
 vote_IP     site-b.com
 
-Redémarrez votre serveur apache : sudo systemctl restart apach2. Accéder aux sites a et b et accépter les certifcats auto-signés.
+Redémarrez votre serveur apache : sudo systemctl restart apach2. 
 
-## Challenge
 
+
+## Challenge : Utlisez Chrome
+
+Ouvrez les outlis de dév de Chrome
+
+Accéder aux sites a et b et accépter les certifcats auto-signés.
+
+Sans cliquez sur aucun bouton, observez les erreurs affichés par Chrome:
+
+![cors2](https://github.com/aabda2000/sti3a-security/assets/38082725/c3e7d608-9923-48ad-ae5e-97db105e121a)
+
+
+Corrigez ces "erreurs" (en corrigeant une "erreur" d'autres erreurs apparaîtront)
 
 
 
