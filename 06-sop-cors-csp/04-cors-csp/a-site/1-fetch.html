@@ -25,6 +25,14 @@
       Demo with Direct link (GET):
       <input type="button" value="Link : CORS Cookie" onclick="demo2()" />
     </div>
+    
+    <div>
+      Demo with Direct link (GET) without URL change:
+      <input type="button" id="demo3" value="replace : CORS Cookie" />
+    </div>
+
+    <div id="parse"></div>
+    
   </body>
 </html>
 
@@ -32,6 +40,13 @@
   function demo2() {
     document.location = "https://site-b.com/2-handler.php";
   }
+</script>
+<script>
+  function demo3() {
+  var tag = document.createElement("script");
+  tag.src = encodeURI("https://site-b.com/2-handler.php");
+  document.getElementById("parse").appendChild(tag);
+}
 </script>
 <script>
   function demo1() {
