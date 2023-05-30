@@ -45,7 +45,6 @@ Avant de cliquez sur bouton, observez les "erreurs" affichées par Chrome:
 
 ![cors2](https://github.com/aabda2000/sti3a-security/assets/38082725/c3e7d608-9923-48ad-ae5e-97db105e121a)
 
-
 Identifiez et Corrigez ces "erreurs" (en corrigeant une "erreur" d'autres apparaîtront)
 
 
