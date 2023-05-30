@@ -1,0 +1,1 @@
+Challenge CORS CSP

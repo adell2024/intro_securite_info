@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none' ; script-src  'self' 'nonce-uG2bsk6JIH923nsvp01n24KE' 'strict-dynamic'  ; style-src https://cdn.jsdelivr.net ;"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="Fetch API: CORS Cookie" onclick="demo1()" />
+    <input type="button" value="Link : CORS Cookie" onclick="demo2()" />
+  </body>
+</html>
+
+<script nonce="uG2bsk6JIH923nsvp01n24KE">
+  function demo2() {
+    document.location = "https://site-b.com/2-handler.php";
+  }
+</script>
+<script nonce="uG2bsk6JIH923nsvp01n24KE">
+  function demo1() {
+    // (B) CORS FETCH TO SITE B
+    fetch("https://site-b.com/2-handler.php", {
+      mode: "cors",
+      credentials: "include",
+    })
+      // (C) FOR DEBUGGING, CONSOLE LOG ALL RESPONSES.
+      .then((res) => {
+        console.log(res);
+        return res.text();
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+</script>
