@@ -10,9 +10,9 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 
 ## Définir les vhosts
 
-Dans le dossier /etc/apache2/sites-available ajouter le fichier de configuration cors.com.conf
+Dans le dossier /etc/apache2/sites-available ajouter le fichier de configuration cors.com.conf (ce fichier est fourni).
 
-Activer les deux sites: sudo a2ensite cors.com.conf
+Activer les deux sites: sudo a2ensite cors.com.conf 
 
 
 ## Définir les sites
