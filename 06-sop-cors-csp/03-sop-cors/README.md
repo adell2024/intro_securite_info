@@ -9,7 +9,7 @@ a) Récupérer les deux pages: page4.php et hello_from_different_origin.php
 b) démarrer deux serveur web: le premier écoutant, par exemple, sur le port 5000 et le deuxième sur le port 8000
 
 
-Analysez le contenu de la page web pag4.php: la requête asynchrone ajax fabrique un entête personnalise ("Header-Custom-TizenCORS").Pour cette raison le navigateur fabrique une requête de pré-vérification (==OPTIONS) avant d'envoyer la vraie requête GET.
+Analysez le contenu de la page web pag4.php: la requête asynchrone ajax fabrique un entête personnalisé ("Header-Custom-TizenCORS").Pour cette raison le navigateur fabrique une requête de pré-vérification (==OPTIONS) avant d'envoyer la vraie requête GET.
 
 Avec les outlis web de Chrome: 
 

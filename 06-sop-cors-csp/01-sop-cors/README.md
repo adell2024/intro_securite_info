@@ -48,9 +48,9 @@ et en se rendant sur le site webhook:
 
 ![webhook6](https://user-images.githubusercontent.com/38082725/236889068-733bb983-f13e-426e-9d9e-812a23bfeaac.png)
 
-Dans ce dernier cas, une pre-requête de vérification OPTIONS (preflight request) est d'abord envoyée au au domaine webhook.site : C'est une requête construite par le navigateur utilisant la méthode OPTIONS qui ajoute trois en-têtes HTTP : La méthode Access-Control-Request-Method (en-US), les en-têtes Access-Control-Request-Headers et Origin.
+Dans ce dernier cas, une pre-requête de vérification OPTIONS (preflight request) est d'abord envoyée au domaine webhook.site : C'est une requête construite par le navigateur utilisant la méthode OPTIONS qui ajoute trois en-têtes HTTP : La méthode Access-Control-Request-Method (en-US), les en-têtes Access-Control-Request-Headers et Origin.
 
 ## challenge
 
-Dans la requête fecth, essayez d'autres valeurs pour la clé "method". Utilisez la suite Burp
+Dans la requête fetch, essayez d'autres valeurs pour la clé "method". Utilisez la suite Burp
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none' ; script-src  'self' 'nonce-uG2bsk6JIH923nsvp01n24KE' 'strict-dynamic'  ;"
+      content="default-src 'none' ; script-src  'self' 'nonce-uG2bsk6JIH923nsvp01n24KE' 'strict-dynamic'  ; "
     />
     <link
       rel="stylesheet"
@@ -17,8 +17,22 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="button" value="Fetch API: CORS Cookie" onclick="demo1()" />
-    <input type="button" value="Link : CORS Cookie" onclick="demo2()" />
+    <div>
+      Demo with Fetch:
+      <input type="button" value="Fetch API: CORS Cookie" onclick="demo1()" />
+    </div>
+    <div>
+      Demo with Direct link (GET):
+      <input type="button" value="Link : CORS Cookie" onclick="demo2()" />
+    </div>
+    
+    <div>
+      Demo with Direct link (GET) without URL change:
+      <input type="button" id="demo3" value="replace : CORS Cookie" />
+    </div>
+
+    <div id="parse"></div>
+    
   </body>
 </html>
 
@@ -28,13 +42,18 @@
   }
 </script>
 <script>
+  function demo3() {
+  var tag = document.createElement("script");
+  tag.src = encodeURI("https://site-b.com/2-handler.php");
+  document.getElementById("parse").appendChild(tag);
+}
+</script>
+<script>
   function demo1() {
-    // (B) CORS FETCH TO SITE B
     fetch("https://site-b.com/2-handler.php", {
       mode: "cors",
       credentials: "include",
     })
-      // (C) FOR DEBUGGING, CONSOLE LOG ALL RESPONSES.
       .then((res) => {
         console.log(res);
         return res.text();
@@ -43,3 +62,4 @@
       .catch((err) => console.log(err));
   }
 </script>
+

@@ -45,9 +45,7 @@ Les politiques CSP sont définies sur le serveur et envoyées soit en tant que e
 
       http-equiv="Content-Security-Policy"
       
-      content="default-src 'none'; script-src 'unsafe-eval' 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf'; style-src 'nonce-da02fcdb0523d8db8c846f0bb900ca0e'"
-
-/&gt;
+      content="default-src 'none'; script-src 'unsafe-eval' 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf'; style-src 'nonce-da02fcdb0523d8db8c846f0bb900ca0e'" />;
 
 default-src 'none'; 
 
@@ -66,5 +64,12 @@ style-src 'nonce-da02fcdb0523d8db8c846f0bb900ca0e'
 
 
 Dans le tag meta la directive "script-src 'unsafe-inline'" n'est pas explicitement défini: donc,à cause de "default-src 'none'; ",tous les scripts inline (emabrqués dans la page HTML) seront bloqués.
+
+## Syntaxe
+
+![csp10](https://github.com/aabda2000/sti3a-security/assets/38082725/ef7c759b-bc3d-4e87-affb-c0dd099130be)
+
+
+
 
 
