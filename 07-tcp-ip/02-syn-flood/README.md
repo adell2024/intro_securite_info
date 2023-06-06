@@ -40,7 +40,7 @@ Avant de lancer l'attaque, vérifions la situation des connexions sur le serveur
 
 L'attaquant utlise netwox pour inonder Server:
 
-### sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
+### Attacker@ sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
 
 Observez l'état des connexions sur le Server:
 ![flood3](https://github.com/aabda2000/sti3a-security/assets/38082725/b885b8d7-a55f-4d02-9b11-4a976d79f4f2)
