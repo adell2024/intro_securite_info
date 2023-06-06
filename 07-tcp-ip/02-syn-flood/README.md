@@ -42,7 +42,7 @@ L'attaquant utlise netwox pour inonder Server:
 
 ### Attacker@ sudo netwox 76 -i 192.168.180.153 -p 23 -s raw
 
-Observez l'état des connexions sur le Server:
+Observez l'état des connexions sur la machine Server:
 ![flood3](https://github.com/aabda2000/sti3a-security/assets/38082725/b885b8d7-a55f-4d02-9b11-4a976d79f4f2)
 
 SYN Flood est une forme d'attaque DoS dans laquelle les attaquants envoient de nombreuses requêtes SYN au port TCP d'une victime : les attaquants n'ont aucunemet l'intention de terminer la procédure de négociation à trois phases. Les attaquants utilisent des adresses IP usurpées. Grâce à cette attaque, les attaquants peuvent inonder la file d'attente de la victime quisera épuisée par les connexions semi-ouvertes.
