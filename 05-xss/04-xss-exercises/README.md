@@ -63,7 +63,7 @@ https://brutelogic.com.br/gym.php?p12=bbbbbbbbbbbbbbbb
 
 Idée: cherchez la chaîne bbbbbbbbbbbbbbbbb dans le code source de la page.fermer le tage script (</script>)
 
-### Exo 6 : Injection DOM
+### Exo 7 : Injection DOM
 
 https://brutelogic.com.br/gym.php?p25=RocksRocksRocksRocksRocksRocks
 
