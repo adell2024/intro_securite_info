@@ -76,3 +76,7 @@ Immédiatement sur Kali, l'attaquant constate qu'une connexion s'est établie en
 
 ![reverse5](https://github.com/aabda2000/sti3a-security/assets/38082725/e5fe699a-8445-44de-8394-7a1629f7b062)
 
+Et les comandes ls, rm, ... seront exécutées sur la machine distante (Victime)
+
+
+
