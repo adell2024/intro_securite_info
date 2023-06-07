@@ -61,7 +61,7 @@ Injecter votre code en suivant le format de la donnée fournie au paramètre p21
   
 https://brutelogic.com.br/gym.php?p12=bbbbbbbbbbbbbbbb
 
-Idée: cherchez la chaîne bbbbbbbbbbbbbbbbb dans le code source de la page.fermer le tage script (</script>)
+Idée: cherchez la chaîne bbbbbbbbbbbbbbbbb dans le code source de la page : fermer le tag script (</script>)
 
 ### Exo 7 : Injection DOM
 
