@@ -4,13 +4,13 @@ L'objectif de l'attaque TCP Session Hijacking est de détourner une connexion TC
 
 ##Cas d'étude
 
- Pour cette attaque de vol de session, on aura des outils suivants:
+ Pour cette attaque de vol de session, on aura besoin des outils suivants:
 
     netwox
     wireshark
     netcat
 
-L'attaque peut se faire en utilisant une seule machine; J'ai employé 3VMs:
+L'attaque peut se faire en utilisant une seule machine; ic j'ai employé 3VMs:
 
     VM pour le serveur (IP=192.168.109.14)
     VM pour la victime (ou utilisateur) d'adresse IP 192.168.109.68
@@ -18,7 +18,7 @@ L'attaque peut se faire en utilisant une seule machine; J'ai employé 3VMs:
 
 J'ai installé netwox et wireshark sur la machine de l'attaquant (une Debian 11).
 
-Sur la machine serveur, j'ai installé un programme serveur (un programme C qui démarre un processus écoutant sur le port 9090) ; vous pouvez sans problème utiliser netcat pour lancer votre serveur.
+Sur la machine serveur, j'ai compilé et exécuté un programme C (un programme C qui démarre un processus écoutant sur le port 9090) ; Une alternative est d'utiliser netcat pour lancer un serveur.
 
 La VM de la victime utilise netcat ent tant que client pour se connecter au serveur. 
 
