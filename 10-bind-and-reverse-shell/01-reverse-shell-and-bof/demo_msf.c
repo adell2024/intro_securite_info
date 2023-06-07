@@ -9,9 +9,7 @@ int vuln(){
  characters_read = read(0, buffer, 1000);
  printf("You entered: %s", buffer);
  return 0;
-
 }
-
 void main(){
   vuln();
   //atterissage après retour de vuln  
