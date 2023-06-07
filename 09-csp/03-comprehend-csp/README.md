@@ -13,7 +13,7 @@ En testant l'appli, avec Chrome, j'obtiens les résulats suivants:
 
 Pour quelle raison le navigateur a déclenché cette protection? quel script est en cause?
 
-N'oubliez pas de tester le bouton "Register" qui déclencherait la fonction "leak" sur l'événement "onsubmit".
+N'oubliez pas de tester le bouton "Register" qui déclencherait la fonction "leakData" sur l'événement "onsubmit".
 
 <pre>
 NOTE IMPORTANTE :
