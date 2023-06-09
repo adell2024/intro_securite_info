@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 #include <unistd.h>
 /* Compile: gcc -fno-stack-protector -z execstack demo_msf.c -o demo_msf -g */
 int vuln(){
