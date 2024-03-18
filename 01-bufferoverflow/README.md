@@ -1,6 +1,10 @@
-Objectifs : 
-> identifiez la vulnérabilité du programme classic.c. Ensuite, exploitez cette vulnérabilité(injection d'un code malicieux sous la forme d'un shell)
+## Objectifs : 
+> identifiez la vulnérabilité dans le programme classic.c.
+> Exploitez cette vulnérabilité (injection d'un code malicieux sous la forme d'un shell)
 
-> Outils : gdb-peda, readelf, file, checksec, objdump, strings, strace
+>> Outils : gdb-peda, readelf, file, checksec, objdump, strings, strace
 
-> Challenges 
+## Challenges :
+> secret.c : une fonction qui manque à l'appel
+
+> even-password : cracker le mot de passe
