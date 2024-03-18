@@ -3,6 +3,6 @@
 
 > Outils : gdb-peda, readelf, file, checksec, objdump, strings, strace
 
-> ## Challenges :
+## Challenges :
 > secret.c
 > even-password : cracker le mot de passe
