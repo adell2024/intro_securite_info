@@ -1,4 +1,4 @@
 Objectifs : 
-> identifiez la vulunérabilité du programme classic.c. Ensuite, exploitez la vulnérabilité : injection d'un code malicieux
+> identifiez la vulnérabilité du programme classic.c. Ensuite, exploitez cette vulnérabilité(injection d'un code malicieux sous forme d'un shell)
 
 > Outils : gdb-peda, readelf, file
