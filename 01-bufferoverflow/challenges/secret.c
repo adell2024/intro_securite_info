@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+/**Challenge : invoquer la fonction secretFunction**/
+
 void secretFunction() {
     printf("Bravo!\n");
     printf("Vous connaissez maintenant le secret!\n");
