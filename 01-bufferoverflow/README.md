@@ -1,7 +1,7 @@
 ## Objectifs : 
 >> identifiez la vulnérabilité dans le programme classic.c.
 - Exploitez cette vulnérabilité (injection d'un code malicieux sous la forme d'un shell)
-- Outils : gdb-peda, readelf, file, checksec, objdump, strings, strace
+- Outils : gdb-peda, readelf, file, checksec, objdump, strings, stracev, hexdump
 
 >> pour l'exploit exploit3.py :
 
@@ -16,3 +16,5 @@
 
 ## Challenge de la mort :
 >> weird-password : cracker le mot de passe
+
+- Hint : (kali㉿kali)- python -c 'import sys; sys.stdout.buffer.write(b"\x20"*4 + b"\x41")' 
