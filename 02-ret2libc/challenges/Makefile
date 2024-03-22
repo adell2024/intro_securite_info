@@ -1,12 +1,13 @@
-CFLAGS = -fno-PIC -Wall -Wextra -Wno-unused-function -Wno-unused-variable -g -O0 -fno-stack-protector
+CFLAGS = -fno-pic -Wall -Wextra -Wno-unused-function -Wno-unused-variable -g -O0  -fno-stack-protector
 LDFLAGS = -no-pie
 
-all: roplibc
-
+all: ropbuf
+        cp ropbuf ropbuf_dbg
+        execstack -s --set-execstack ropbuf
 .PHONY: clean
 
-roplibc: roplibc.c
+ropbuf: ropbuf.c
 
 clean:
-	rm -f roplibc
-	rm -f *.o
+        rm -f ropbuf ropbuf_dbg
+        rm -f *.o
