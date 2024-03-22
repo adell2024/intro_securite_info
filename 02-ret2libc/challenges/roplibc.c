@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <string.h>
 
-// recv and execute from gbuf
-char gbuf[256];
-
-void vuln()
+void vuln(char *input)
 {
-    char buf[64];
-    read(0, buf, 512);
+        char buf[128];
+        strcpy(buf, input);
 }
 
-int main(void)
+int main(int argc, char **argv)
 {
-    vuln();
-    return 0;
+        setvbuf(stdout, NULL, _IONBF, 0);
+        setvbuf(stdin, NULL, _IONBF, 0);
+        if (argc > 1)
+                vuln(argv[1]);
+        return 0;
 }
+
