@@ -1,6 +1,13 @@
 ### SOP CORS
 
-Déployez les 4 pages php dans le même dossier et démarrez ensuite votre serveur web (serveur php intégré ou Apache).
+Déployez les 4 pages php dans le même dossier et démarrez ensuite votre serveur web (serveur php intégré ou Apache).Assurez-vous d'avoir l' interpréteur de PHP installé sur votre machine (tapez la commande php)
+
+Vous avez le choix entre: 
+++ Mettre les pages php dans le dossier /var/www/html du serveur APACHE
+
+++ Laisser les pages dans le dossier actuel, pour ensuite démarrer un petit serveur web php :
+
+insa@matrix:~/intro_securite_info/06-sop-cors-csp/02-sop-cors$ php -S localhost:2025 -d error_reporting=E_ALL
 
 
 ## page1.php
