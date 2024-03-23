@@ -17,6 +17,8 @@ Tout en ouvrant les outils web de votre navigateur, appelez la page page1.php.
 
 Constatez la présence d'une erreur CORS.
 
+![cors1](https://github.com/adell2024/intro_securite_info/assets/159798073/4b84cba7-ee4d-4a91-bd6f-2ac8fc528f67)
+
 Expliquez la raison de cette erreur
 
 
