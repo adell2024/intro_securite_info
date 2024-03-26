@@ -50,6 +50,12 @@ Exécutez la commande curl 3 fois : la valeur de la clé x-sucuri-cache passe de
 
 Après quelques exécutions, la requête est cachée (HIT).
 
+A partir de votre navigateur, vérifiez que le cache web a bien caché votre requête :
+
+![hit](https://github.com/adell2024/intro_securite_info/assets/159798073/94da03d8-4929-4dc1-9b63-921892888bb1)
+
+
+
 Dans Burp Suite( mais ce n'est pas obligatoire, vous pouvez faire ce test sans Burp Suite), demandez la même URL:
 
 ![burp4](https://user-images.githubusercontent.com/38082725/236817199-8aab5f83-cda5-4fe7-a77b-dd7af086fb98.png)
