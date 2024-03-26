@@ -15,6 +15,12 @@ https://brutelogic.com.br/gym.php?p01=title
 
 idée: l'injection est possible : si je mets le paramètre p01 à toto, cette dernière est reflétée par la page web.
 
+Code source de la page :
+
+
+![hit2](https://github.com/adell2024/intro_securite_info/assets/159798073/9cfc33c8-69ba-440c-b222-8b1571ed5a4c)
+
+Dans Burp:
 
 ![title](https://github.com/aabda2000/sti3a-security/assets/38082725/d44e7975-45e9-40b6-8888-f1a185d93660)
 
