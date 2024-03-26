@@ -66,3 +66,12 @@ On remarque que la clé "Test" a été bien injectée!
 ## Challenge : Injectez un code javascript
 
 Dans la chaîne "Test: 42", remplacez la valeur "42" par un code javascript qui, à son exécution par le navigateur", affichera une boîte popup avec le message "Hacked".
+
+Démarche :
+
+1 - avec curl injectez le code malicieux. Exécutez curl autant de fois que nécessaire; le champs x-sucuri-cache doit se mettre à HIT
+
+2- Pour vérifez l'attaque XSS, donnez au navigateur la même URL
+
+3- A chaque test, vous devriez changer la valeur du paramètre de la requête : si vous commencez avec la chaîne "toto", par exemple, le test suivant mettez "toto2", "toto3", etc...
+
