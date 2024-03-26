@@ -69,11 +69,11 @@ Dans la chaîne "Test: 42", remplacez la valeur "42" par un code javascript qui,
 
 Démarche :
 
-1 - avec curl injectez le code malicieux. Exécutez curl autant de fois que nécessaire; le champs x-sucuri-cache doit se mettre à HIT
+1 - Avec curl injectez le code malicieux. Exécutez curl autant de fois que nécessaire; le champs x-sucuri-cache doit se mettre à HIT
 
-2- Pour vérifez l'attaque XSS, donnez au navigateur la même URL
+2- Vérifez l'attaque XSS, en donnant au navigateur la même URL fournie à curl
 
 3- A chaque test, vous devriez changer la valeur du paramètre de la requête : si vous commencez avec la chaîne "toto", par exemple, le test suivant mettez "toto2", "toto3", etc...
 
-4- pour les payloads, voilà une source utile : https://github.com/ihebski/XSS-Payloads
+4- Pour les payloads XSS, voilà une source utile : https://github.com/ihebski/XSS-Payloads
 
