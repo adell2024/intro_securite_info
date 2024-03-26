@@ -9,6 +9,9 @@ Aucun secret pour devenir agile en XSS : il faut pratiquer , pratiquer, .....
 Carriage return (\r): %0d || Linefeed (\n): %0a || %25 : % || %26 : & || &apos = %26apos; : ' ||
 %20 : (space) || %23 : "
 
+Encodage : http://yehg.net/encoding/
+
+
 ### Exo 1 : Injection dans le tag "title" de la page
 
 https://brutelogic.com.br/gym.php?p01=title
@@ -35,7 +38,9 @@ Idée : inspecter la source de la page et analyser le tag body contenant l'attri
 
 https://brutelogic.com.br/gym.php?p23=toto
   
-Idée : Utiliser Burp Suite pour observer les entêtes de la réponse HTTP
+Idée : Utiliser Burp Suite pour observer les entêtes de la réponse HTTP.
+
+Encodage : http://yehg.net/encoding/
 
 ### Exo 4 : Injection URL 
 
