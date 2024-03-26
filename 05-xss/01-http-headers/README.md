@@ -1,10 +1,10 @@
 ## xss via http headers
 
-Pour cette activité, Nous aurons besoin de "Burp Suite Community Edition" ; cette suite logicielle (écrite en Java) est installée par défaut avec la distribution Kali.Si vous voulez l'installer dans votre distribution alors rendez-vous au site: https://portswigger.net/burp/communitydownload
+Pour cette activité, Nous aurons besoin de "Burp Suite Community Edition" ; cette suite logicielle (écrite en Java) est installée par défaut avec la distribution Kali. Si vous voulez l'installer dans votre distribution alors rendez-vous au site: https://portswigger.net/burp/communitydownload.
 
 ## Découverte de Burp Suite
 
-Lancer la suite Burp Suite et dans la foulée lancer navigateur Web qui l'accompagne :vous remarquez que le bouton "intercept is on" est actif ; ce bouton permet d'intercepter les requêtes http avant d'atteindre leurs cibles ( vous permettant d'analyser et modifier la requête et ses entêtes. En clqiuant sur le bouton "forward", les requêtes seront transmises à leurs cibles:
+Lancer la suite Burp Suite et dans la foulée lancer navigateur Web qui l'accompagne : vous remarquerez que le bouton "intercept is on" est actif ; ce bouton permet d'intercepter les requêtes http avant d'atteindre leurs cibles ( vous permettant d'analyser et modifier la requête et ses entêtes. En clqiuant sur le bouton "forward", les requêtes seront transmises à leurs cibles:
 
 ![burp1](https://user-images.githubusercontent.com/38082725/236813494-47bcb764-0302-4267-889c-1867abf56e6c.png)
 
@@ -18,7 +18,7 @@ Cliquez sur le bouton "forward" pour transmettre la requête au serveur héberge
 
 N'hésitez pas à découvir tout le potentiel de ce superbe outil.
 
-## Terminal Linux
+## Activité XSS avec le Terminal Linux
 
 Avec l'outil curl, injectez  "Test: 42" dans les entêtes de la requête http. 
 
@@ -63,7 +63,7 @@ Dans Burp Suite, demandez la même URL:
 
 On remarque que la clé "Test" a été bien injectée!
 
-## Challenge : Injectez un code javascript
+## Challenge XSS : Injectez un code javascript
 
 Dans la chaîne "Test: 42", remplacez la valeur "42" par un code javascript qui, à son exécution par le navigateur", affichera une boîte popup avec le message "Hacked".
 
@@ -74,4 +74,6 @@ Démarche :
 2- Pour vérifez l'attaque XSS, donnez au navigateur la même URL
 
 3- A chaque test, vous devriez changer la valeur du paramètre de la requête : si vous commencez avec la chaîne "toto", par exemple, le test suivant mettez "toto2", "toto3", etc...
+
+4- pour les payloads, voilà une source utile : https://github.com/ihebski/XSS-Payloads
 
