@@ -20,7 +20,9 @@ N'hésitez pas à découvir tout le potentiel de ce superbe outil.
 
 ## Terminal Linux
 
-Avec l'outil curl, injectez  "Test: 42" dans les entêtes de la requête http. Veuillez choisir une chaine autre que la mienne("azerty" ) pour votre injection! 
+Avec l'outil curl, injectez  "Test: 42" dans les entêtes de la requête http. 
+
+Veuillez choisir une chaine autre que la mienne("azerty") pour votre injection! 
 
 curl -iH "Test: 42"  https://brutelogic.com.br/lab/header.php?azerty
 
@@ -42,7 +44,11 @@ x-sucuri-cache: MISS
 
 {"Host":"brutelogic.com.br","X-Forwarded-For":"5.182.170.53","X-Forwarded-Proto":"https","X-Real-IP":"5.182.170.53","X-Sucuri-ClientIP":"5.182.170.53","X-Sucuri-Country":"FR","user-agent":"curl\/7.82.0","accept":"*\/*","test":"42"}
 
+Notez bien que le champs x-sucuri-cache vaut MISS: le cache web n'a pas caché encore notre requête.
+
 Exécutez la commande curl 3 fois : la valeur de la clé x-sucuri-cache passe de MISS à HIT
+
+Après quelques exécutions, la requête est cachée (HIT).
 
 Dans Burp Suite( mais ce n'est pas obligatoire, vous pouvez faire ce test sans Burp Suite), demandez la même URL:
 
