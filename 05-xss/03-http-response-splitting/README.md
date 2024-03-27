@@ -37,19 +37,6 @@ La chaîne à injecter dans le champ "search by country" :
 
 ![hrs3](https://github.com/aabda2000/sti3a-security/assets/38082725/6623e37d-8e45-499d-95a7-42e9ebe73650)
 
-Pour pouvoir la recopier, voilà la chaîne au format texte:
-
-Content-Length: 0
-
-HTTP/1.1 200 OK
-
-Content-Type: text/html
-
-Content-Length: 61
-
-Last-Modified: Fri, 30 Dec 2025 17:32:47 GMT
-
-<html><script>alert("stealing your data:")</script></html>
 
 ## Encodage
 
