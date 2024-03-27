@@ -30,9 +30,15 @@ Le site est vulnérable aux attaques CSRF.
 
 utlisateur authetifié: test/test
 
+![csrf1](https://github.com/adell2024/intro_securite_info/assets/159798073/c180cf73-a07d-4891-bf1b-6f30581ff59a)
+
 Trouver la faille et développer vos attaques CSRF :
 
 a) En utlisant le tag img et son attribut src
 
 b) En utlisant un formulaire html : ce formulaire est hébérgé par le site de l'attaquant
+
+Hint: Pour la faille CSRF, essayer des transferts et chercher à comprendre identifier les élèments qui composent une opération de transfer. Etudier,aussi, le code source de la page account.php, surtout le formulaire
+
+![csrf2](https://github.com/adell2024/intro_securite_info/assets/159798073/bd37b942-84d5-4bef-bc38-c545c8b006df)
 
