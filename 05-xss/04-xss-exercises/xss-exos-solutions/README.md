@@ -20,7 +20,8 @@ potatoes
 Location: http://myweb.com
 </pre>
 
-J'encode ce paramètre correctement pour obtenir: p23=potatoes%0d%0aLocation:%20http://myweb.com
+J'encode ce paramètre correctement pour obtenir: 
+p23=potatoes%0d%0aLocation:%20http://myweb.com
 
 https://brutelogic.com.br/gym.php?p23=potatoes%0d%0aLocation:%20http://myweb.com
 
