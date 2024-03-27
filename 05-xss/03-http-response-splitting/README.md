@@ -8,7 +8,7 @@ Si  une donée entrée est reflétée dans un en-tête de réponse, alors une in
 
 CRLF --> Http Response Splitting--> XSS
 
-CRLF--> Header Injection (--> redirection
+CRLF--> Header Injection --> redirection
 
 ## La vulnérabilité 
 
@@ -31,9 +31,7 @@ L'application web vulnérable, objet de cette attaque est l'application web (jav
 
 ![hrs1](https://github.com/aabda2000/sti3a-security/assets/38082725/4240387c-ce1f-43f4-a518-4d86a2cd560b)
 
-
-
-
+url: https://sourceforge.net/projects/owaspbwa/files/
 
 La chaîne à injecter dans le champ "search by country" :
 
