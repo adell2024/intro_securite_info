@@ -15,6 +15,7 @@ Client : 192.168.180.136
 Server : 192.168.180.153
 
 Le client se connecte en telnet à Server : telnet 192.168.180.153
+
 Attacker : Any IP
 
 L'attaquant supposé être dans cet exemple dans le même LAN que CLient&Server. Avec Wireshark, il a pu voir le traffic circulant entre les deux entitées. Voilà le dernier segment de l'échange:
