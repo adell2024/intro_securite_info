@@ -1,1 +1,1 @@
-SOP CORS CSP
+SOP :Same Origin Policy
