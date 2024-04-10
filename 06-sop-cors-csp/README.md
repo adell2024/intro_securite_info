@@ -26,7 +26,8 @@ Et l'expression "cross-origin" est prononcée! C'est bien clair, je ne peux acc�
 # 2ème Essai
 Toujours dans le naviageteur et dans l'onglet "inspecteur", je voudrais injecter une balise "iframe" dans le code HTML de la page d'accueil du site https://cas.insa-cvl.fr/cas/login:
 
-<iframe src="https://ncatlab.org" title="W3Schools Free Online Web Tutorials"></iframe>
+<iframe src="https://ncatlab.org" title="W3Schools Free Online Web Tutorials"></iframe> :
+
 
 ![cors6](https://github.com/adell2024/intro_securite_info/assets/159798073/6a8de0ea-0585-40e1-a804-1d9a18c5b1e5)
 
@@ -34,4 +35,6 @@ En réponse à cette injection, FireFox réagit immédiatement:
 
 ![cors7](https://github.com/adell2024/intro_securite_info/assets/159798073/4199be0d-acdf-4eb6-9b72-49e145870d92)
 
+En basculant dans l'onlget "réseau":
 
+![cors8](https://github.com/adell2024/intro_securite_info/assets/159798073/5455f7dd-f48a-409d-8701-8463b9f1e142)
