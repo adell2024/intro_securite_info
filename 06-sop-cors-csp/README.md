@@ -10,3 +10,7 @@ Dans votre navigateur, allez visiter la page "https://cas.insa-cvl.fr/cas/login"
 dans la console du navigateur,tapez : newwin=window.open("https://ncatlab.org","mynewwindow"). Observez la réaction du naviagteur
 
 ![cors3](https://github.com/adell2024/intro_securite_info/assets/159798073/2a489209-7487-4c45-b03f-8b79abbbd9ff)
+
+Toujours dans la console, tapez : newin. Les propriétes de cet objet s'afficheront:
+
+![cors4](https://github.com/adell2024/intro_securite_info/assets/159798073/5685f0d0-9661-4fe4-a82a-af744c6ced94)
