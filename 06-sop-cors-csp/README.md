@@ -14,3 +14,7 @@ dans la console du navigateur,tapez : newwin=window.open("https://ncatlab.org","
 Toujours dans la console, tapez : newin. Les propriétes de cet objet s'afficheront:
 
 ![cors4](https://github.com/adell2024/intro_securite_info/assets/159798073/5685f0d0-9661-4fe4-a82a-af744c6ced94)
+
+Si je cherche à accéder au site "https://ncatlab.org", et plus particulièrement à "body", le navigateur m'empêchera:
+
+![cors5](https://github.com/adell2024/intro_securite_info/assets/159798073/ee4d4731-18d5-4bd4-a617-0022976cfcd9)
