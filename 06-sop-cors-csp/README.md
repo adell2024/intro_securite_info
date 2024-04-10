@@ -31,4 +31,8 @@ Toujours dans le naviageteur et dans l'onglet "inspecteur", je voudrais injecter
 
 ![cors6](https://github.com/adell2024/intro_securite_info/assets/159798073/6a8de0ea-0585-40e1-a804-1d9a18c5b1e5)
 
+En réponse à cette injection, FireFox réagit immédiatement:
+
+![cors7](https://github.com/adell2024/intro_securite_info/assets/159798073/4199be0d-acdf-4eb6-9b72-49e145870d92)
+
 
