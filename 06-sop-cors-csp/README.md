@@ -25,7 +25,9 @@ Le message est clair: "Uncaught DOMException: Permission denied to access proper
 Et l'expression "cross-origin" est prononcée! C'est bien clair, je ne peux accéder,ici, à https://ncatlab.org à partir d'une origine différente.
 
 # 2ème Essai
-Toujours dans le naviageteur et dans l'onglet "inspecteur", je voudrais injecter une balise "iframe" dans le code HTML de la page d'accueil du site https://cas.insa-cvl.fr/cas/login
+Toujours dans le naviageteur et dans l'onglet "inspecteur", je voudrais injecter une balise "iframe" dans le code HTML de la page d'accueil du site https://cas.insa-cvl.fr/cas/login:
+
+<iframe src="https://ncatlab.org" title="W3Schools Free Online Web Tutorials"></iframe>
 
 ![cors6](https://github.com/adell2024/intro_securite_info/assets/159798073/6a8de0ea-0585-40e1-a804-1d9a18c5b1e5)
 
