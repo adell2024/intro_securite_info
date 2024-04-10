@@ -28,7 +28,6 @@ Toujours dans le naviageteur et dans l'onglet "inspecteur", je voudrais injecter
 
 <iframe src="https://ncatlab.org" title="W3Schools Free Online Web Tutorials"></iframe> :
 
-
 ![cors6](https://github.com/adell2024/intro_securite_info/assets/159798073/6a8de0ea-0585-40e1-a804-1d9a18c5b1e5)
 
 En réponse à cette injection, FireFox réagit immédiatement:
@@ -39,11 +38,10 @@ En basculant dans l'onlget "réseau":
 
 ![cors8](https://github.com/adell2024/intro_securite_info/assets/159798073/5455f7dd-f48a-409d-8701-8463b9f1e142)
 
-Notez bien, qu'une requête HTTP GET a bien été envoyé au site ncatlab.org, mais FireFox nous empêche d'accéder aux données de la réponse.
+Notez bien, qu'une requête HTTP GET a bien été envoyée au site ncatlab.org, mais FireFox nous empêche d'accéder aux données de la réponse.
 
 Regardons les entêtes de la requête et la réponse :
 
 ![cors9](https://github.com/adell2024/intro_securite_info/assets/159798073/65e19308-ab57-4d62-8d7f-0b7cfb8d56f3)
 
-Ce qui bloque la réponse est le drapeu "X-Frame-Options:DENY". FireFox qui réceptionne ce drapeau, mis à DENY, en réponse à la requête HTTP GET (iframe), adressée au site ncatlab.org,rend indisponible les données de la réponse au site 
-cas.insa-cvl.fr.
+Ce qui bloque la réponse est le drapeu "X-Frame-Options:DENY". FireFox qui réceptionne ce drapeau, mis à DENY, en réponse à la requête HTTP GET (iframe), adressée au site ncatlab.org, rend indisponible les données de la réponse au site cas.insa-cvl.fr.
