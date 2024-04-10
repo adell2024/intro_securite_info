@@ -7,7 +7,6 @@ Historiquement le SOP date des années 90. Pour bien comprendre d'où vient ce t
 Dans votre navigateur, allez visiter la page "https://cas.insa-cvl.fr/cas/login" en activant les devtools:
 
 ![cors2](https://github.com/adell2024/intro_securite_info/assets/159798073/73b37231-999d-4c57-a060-8830ae1991e7)
-
 dans la console du navigateur,tapez : newwin=window.open("https://ncatlab.org","mynewwindow"). Observez la réaction du naviagteur
 
 ![cors3](https://github.com/adell2024/intro_securite_info/assets/159798073/2a489209-7487-4c45-b03f-8b79abbbd9ff)
