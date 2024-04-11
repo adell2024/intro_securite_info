@@ -17,13 +17,13 @@ Pour les TD à venir (prévoir de venir 5' plus tôt)::
     Machine Kali : vérifier que les outils que j'ai mentionnés sont tous installés ( premier slide)
     
     Machine virtuelle metsploitable2 : https://sourceforge.net/projects/metasploitable/files/Metasploitable2/.
+    dézipper La VM et la démarrer avec VmWare Workstation
     
-    dézipper La VM et la démarrer avec VmwareWorkstation
     Machine virtuelle OWASP Broken Web Application : https://sourceforge.net/projects/owaspbwa/files/ ( version 1.2)
 
 De préférence et dans la mesure de possible, venez avec vos ordi personnels (et prêts)
 
-# Vous n'avez pas d'ordi perso et nous sommes dans une salle VDI
+## Vous n'avez pas d'ordi perso et nous sommes dans une salle VDI
 
 Installer docker.io
 
@@ -37,4 +37,4 @@ Dans un terminal séparé : sudo docker run --network=pentest -h victim -it --rm
 
 Dans un terminal séparé : sudo docker run --network=pentest -h attacker -it --rm --name kalibox kalilinux/kali-rolling
 
-Dans le container Kali : apt update, apt install net-tools, apt install nmap
+Dans le container Kali : apt update, apt install net-tools, apt install nmap, etc...
