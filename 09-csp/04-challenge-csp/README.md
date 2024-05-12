@@ -1,10 +1,10 @@
-## CSP Challenge
+## CSP : Challenge de la mort
 
 URL: https://challenge-1021.intigriti.io/challenge/challenge.php
 
 Votre objectif est d'injecter le code alert(document.domain) ou alert(1).
 
-Sur Internet des solutions existent: Mais franchement quel est l'intérêt de chercher la solution avant d'essayer de le résoudre vous-même le challenge.
+Sur Internet des solutions existent: Mais franchement quel est l'intérêt de chercher la solution avant d'essayer de résoudre vous-même le challenge.
 
 
 Quelques notes pour vous aider dans votre investigation et vous faire gagner du temps:
@@ -15,7 +15,7 @@ b) Les nonces changent à chaque requête http ( ce qui est le cas normal)
 
 c) L'URL accepte les deux paramètres html et xss: Essayez-les séparément et ensemble...la solution emploie les deux paramètres
 
-exemples:
+Exemples:
 https://challenge-1021.intigriti.io/challenge/challenge.php?html=test
 
 https://challenge-1021.intigriti.io/challenge/challenge.php?xss=test
@@ -27,7 +27,7 @@ e) N'oubliez pas la régle concernant la fonction document.createElement("script
 
 d) Une particularité des navigateurs:
 
-le code html suivant:
+Le code html suivant:
 
 <pre>
 &lt;diva&gt;
@@ -64,5 +64,6 @@ let s = document.createElement("script");
 s.type = "text/javascript";
 s.appendChild(document.createTextNode(e));
 document.body.appendChild(s);</pre>
+
 Armé avec ces connaissances, trouvez la formule "magique" pour déjouer les protections CSP
 
