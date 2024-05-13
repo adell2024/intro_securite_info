@@ -12,7 +12,7 @@ Vérifier que la méthode javascript "check()" est bien appelée lors de la sais
 
 Expliquer pour quelle raison la méthode check() est boquée.
 
-Observez les messages de Chrome lors de l'appel de l'URl http://IP:5000/login.php
+Observez les messages de Chrome (console) lors de l'appel de l'URl http://IP:5000/login.php
 
 ## Ajout de la directive 'unsafe-inline'
 
