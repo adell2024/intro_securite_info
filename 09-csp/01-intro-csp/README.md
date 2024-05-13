@@ -1,5 +1,7 @@
 ## Cas d'étude
 
+[Vous pouvez regarder cette vidéo sur les fondamentaux de CSP : https://www.youtube.com/watch?v=7fvaz5GSDOg]
+
 Ouvrez dans un nouvel onlget l'URL suivante : https://challenge-1021.intigriti.io/challenge/challenge.php
 
 ![csp1](https://github.com/aabda2000/sti3a-security/assets/38082725/d42a1a31-ecd3-4c76-897b-f8d97db1df3f)
