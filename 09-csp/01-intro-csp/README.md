@@ -35,7 +35,7 @@ Ce qui a empêché notre script de s'exécuter est la mise place d'une politique
 
 ## CSP
 
-"Content Security Policy" permet de définir une stratégie de contrôle des accès aux ressources atteignables d’un site par l’application de restrictions sous forme de "liste blanche", réduisant ainsi le risque d’apparition et l’exploitabilité de vulnérabilités XSS.
+"Content Security Policy" permet de définir une stratégie de contrôle d'accès aux ressources atteignables d’un site par l’application de restrictions sous forme de "liste blanche", réduisant ainsi le risque d’apparition et l’exploitabilité de vulnérabilités XSS.
 
 Les politiques CSP sont définies sur le serveur et envoyées soit en tant que entête dans la réponse HTTP ou bien en tant que balise HTML "meta" avec http-equiv et l'attribut de contenu "content". Les Navigateurs Web sont priés ensuite de les appliquer.
 
