@@ -67,6 +67,10 @@ style-src 'nonce-da02fcdb0523d8db8c846f0bb900ca0e'
 
 Dans le tag meta la directive "script-src 'unsafe-inline'" n'est pas explicitement défini: donc,à cause de "default-src 'none'; ",tous les scripts inline (emabrqués dans la page HTML) seront bloqués.
 
+##injection XSS
+
+Injectez un code javascript (<script>alert(1)</script> dans le paramètre xss de l'URL: Observez la "réaction du navigateur". Quel attribut(directive) CSP empêche votre script de s'exécuter dans la session courante?
+
 ## Syntaxe
 
 ![csp10](https://github.com/aabda2000/sti3a-security/assets/38082725/ef7c759b-bc3d-4e87-affb-c0dd099130be)
