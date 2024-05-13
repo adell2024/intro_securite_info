@@ -69,7 +69,7 @@ Dans le tag meta la directive "script-src 'unsafe-inline'" n'est pas expliciteme
 
 ##injection XSS
 
-Injectez un code javascript (<script>alert(1)</script> dans le paramètre xss de l'URL: Observez la "réaction du navigateur". Quel attribut(directive) CSP empêche votre script de s'exécuter dans la session courante?
+Injectez un code javascript (<script>alert(1)</script>) dans le paramètre xss de l'URL: Observez la "réaction du navigateur". Cherchez avec les devtools l'endroit où le code JS a été emebarqué dans la page. Quel attribut(directive) CSP empêche votre script de s'exécuter dans la session courante?
 
 ## Syntaxe
 
