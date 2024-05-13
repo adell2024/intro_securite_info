@@ -53,7 +53,7 @@ default-src 'none';
 
 script-src 'unsafe-eval' 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf';
  
-⬇️ cette stratégie CSP demande au navigateur d'exécuter/évaluer le code JavaScript représenté sous forme d'une chaîne de caractères. Par exemple, la chaîne 'alert("Your query string was ' + unescape(document.location.search) + '");' sera exécutée si elle est passée à eval :eval('alert("Your query string was ' + unescape(document.location.search) + '");') avec bien sûr les risques associés à cette autorisation!ce qui n’est pas une bonne pratique.
+⬇️ cette stratégie CSP autorise le navigateur d'exécuter/évaluer le code JavaScript représenté sous forme d'une chaîne de caractères. Par exemple, la chaîne 'alert("Your query string was ' + unescape(document.location.search) + '");' sera exécutée si elle est passée à eval :eval('alert("Your query string was ' + unescape(document.location.search) + '");') avec bien sûr les risques associés à cette autorisation!ce qui n’est pas une bonne pratique.
 
 La valeur 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf' indique que la confiance explicitement donnée à un script de la page, par le biais du nonce 4b3e5204032863cc409596405da4e1bf, doit être propagée à tous les scripts chargés par celui-ci.
 
