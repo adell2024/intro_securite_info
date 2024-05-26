@@ -40,5 +40,6 @@ et la connexion telnet brisée:
 
 Utlisez et complétez le script python (fourni) pour rompre la connexion entre deux entités en communication.
 
->>Documentez-vous sur la libraire python scapy.
+>>Documentez-vous sur la libraire python scapy : https://scapy.net/
+>>
 
