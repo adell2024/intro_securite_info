@@ -38,7 +38,7 @@ et la connexion telnet brisée:
 
 ## Challenge 
 
-Utlisez et complétez le script python (fourni) pour rompre la connexion entre deux entités en communication.
+Utlisez et complétez le script python (fourni) pour rompre la connexion entre deux entités communicantes.
 
 >>Documentez-vous sur la libraire python scapy : https://scapy.net/
 >>
