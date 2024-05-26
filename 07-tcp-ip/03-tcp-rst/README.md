@@ -36,7 +36,9 @@ et la connexion telnet brisée:
 
 ![tcp5](https://github.com/aabda2000/sti3a-security/assets/38082725/78ba4872-a387-48b6-beef-7387a27a37d2)
 
-## Challenge
+## Challenge 
 
 Utlisez et complétez le script python (fourni) pour rompre la connexion entre deux entités en communication.
+
+>>Documentez-vous sur la libraire python scapy.
 
