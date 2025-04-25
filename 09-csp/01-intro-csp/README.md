@@ -1,5 +1,7 @@
 ## Cas d'étude
 
+[Vous pouvez regarder cette vidéo sur les fondamentaux de CSP : https://www.youtube.com/watch?v=7fvaz5GSDOg]
+
 Ouvrez dans un nouvel onlget l'URL suivante : https://challenge-1021.intigriti.io/challenge/challenge.php
 
 ![csp1](https://github.com/aabda2000/sti3a-security/assets/38082725/d42a1a31-ecd3-4c76-897b-f8d97db1df3f)
@@ -35,7 +37,7 @@ Ce qui a empêché notre script de s'exécuter est la mise place d'une politique
 
 ## CSP
 
-"Content Security Policy" permet de définir une stratégie de contrôle des accès aux ressources atteignables d’un site par l’application de restrictions sous forme de "liste blanche", réduisant ainsi le risque d’apparition et l’exploitabilité de vulnérabilités XSS.
+"Content Security Policy" permet de définir une stratégie de contrôle d'accès aux ressources atteignables d’un site par l’application de restrictions sous forme de "liste blanche", réduisant ainsi le risque d’apparition et l’exploitabilité de vulnérabilités XSS.
 
 Les politiques CSP sont définies sur le serveur et envoyées soit en tant que entête dans la réponse HTTP ou bien en tant que balise HTML "meta" avec http-equiv et l'attribut de contenu "content". Les Navigateurs Web sont priés ensuite de les appliquer.
 
@@ -53,7 +55,7 @@ default-src 'none';
 
 script-src 'unsafe-eval' 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf';
  
-⬇️ cette stratégie CSP demande au navigateur d'exécuter/évaluer le code JavaScript représenté sous forme d'une chaîne de caractères. Par exemple, la chaîne 'alert("Your query string was ' + unescape(document.location.search) + '");' sera exécutée si elle est passée à eval :eval('alert("Your query string was ' + unescape(document.location.search) + '");') avec bien sûr les risques associés à cette autorisation!ce qui n’est pas une bonne pratique.
+⬇️ cette stratégie CSP autorise le navigateur d'exécuter/évaluer le code JavaScript représenté sous forme d'une chaîne de caractères. Par exemple, la chaîne 'alert("Your query string was ' + unescape(document.location.search) + '");' sera exécutée si elle est passée à eval :eval('alert("Your query string was ' + unescape(document.location.search) + '");') avec bien sûr les risques associés à cette autorisation!ce qui n’est pas une bonne pratique.
 
 La valeur 'strict-dynamic' 'nonce-4b3e5204032863cc409596405da4e1bf' indique que la confiance explicitement donnée à un script de la page, par le biais du nonce 4b3e5204032863cc409596405da4e1bf, doit être propagée à tous les scripts chargés par celui-ci.
 
@@ -64,6 +66,10 @@ style-src 'nonce-da02fcdb0523d8db8c846f0bb900ca0e'
 
 
 Dans le tag meta la directive "script-src 'unsafe-inline'" n'est pas explicitement défini: donc,à cause de "default-src 'none'; ",tous les scripts inline (emabrqués dans la page HTML) seront bloqués.
+
+##injection XSS
+
+Injectez un code javascript (<script>alert(1)</script>) dans le paramètre xss de l'URL: Observez la "réaction du navigateur". Cherchez avec les devtools l'endroit où le code JS a été emebarqué dans la page. Quel attribut(directive) CSP empêche votre script de s'exécuter dans la session courante?
 
 ## Syntaxe
 
