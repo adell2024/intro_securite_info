@@ -17,7 +17,9 @@ sudo apt update ; sudo apt install ropper
 lancer ropper: ropper (Entrée)
 
 pop_rdi :
+
 ![poprdi gadget](https://raw.githubusercontent.com/adell2024/intro_securite_info/master/02-ret2libc/images/poprdi.png)
+
 
 binsh_addr :
 ❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6 | grep /bin/sh
