@@ -17,6 +17,8 @@ lancer ropper: ropper (Entrée)
   1481: 0000000000050d70    45 FUNC    WEAK   DEFAULT   15 system@@GLIBC_2.2.5
 
 ❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep exit
+2760: 00000000000455f0    32 FUNC    GLOBAL DEFAULT   15 exit@@GLIBC_2.2.5
+
 
 
 
