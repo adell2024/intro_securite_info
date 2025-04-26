@@ -46,6 +46,7 @@ gdb-peda$ asmsearch "pop rdi ; ret"
 gdb-peda$ p system
 
 $1 = {int (const char *)} 0x7ffff7e36e50 <__libc_system>
+
 gdb-peda$
 
 ## Chercher l'offset
@@ -84,6 +85,6 @@ sous GNU/Linux) est le syndrome que notre application est effectivement affecté
 
 ## Lancez l'attaque
 
-Mettez les différentes adresses trouvées dans le script pyton ret2libc.py et exécutez-le ensuite:
+Mettez les différentes adresses trouvées dans le script pyton monexploit.py
 
-![ret5](https://github.com/aabda2000/sti3a-security/assets/38082725/1880213c-e883-4757-aefa-1679fe2e8eba)
+

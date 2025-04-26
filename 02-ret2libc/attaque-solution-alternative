@@ -1,0 +1,10 @@
+## Installer ropper : 
+
+Ropper est principalement écrit en Python. 
+
+Il s'agit d'un outil open-source pour l'analyse de fichiers binaires et la recherche de gadgets ROP (Return-Oriented Programming), développé par Alexander Margaritov
+
+sudo apt update ; sudo apt install ropper
+
+lancer ropper: ropper (Entrée)
+
