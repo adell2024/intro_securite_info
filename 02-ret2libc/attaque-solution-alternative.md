@@ -22,15 +22,21 @@ pop_rdi :
 
 
 binsh_addr :
+
 ❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6 | grep /bin/sh
+
  1d8678 /bin/sh
 
 system_addr :
+
 ❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep system
+
   1481: 0000000000050d70    45 FUNC    WEAK   DEFAULT   15 system@@GLIBC_2.2.5
 
 exit_addr:
+
 ❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep exit
+
 2760: 00000000000455f0    32 FUNC    GLOBAL DEFAULT   15 exit@@GLIBC_2.2.5
 
 
