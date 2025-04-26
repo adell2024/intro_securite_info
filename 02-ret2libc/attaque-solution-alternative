@@ -9,3 +9,16 @@ sudo apt update ; sudo apt install ropper
 lancer ropper: ropper (Entrée)
 
 ![poprdi gadget](https://raw.githubusercontent.com/adell2024/intro_securite_info/master/02-ret2libc/images/poprdi.png)
+
+❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6 | grep /bin/sh
+ 1d8678 /bin/sh
+
+❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep system
+  1481: 0000000000050d70    45 FUNC    WEAK   DEFAULT   15 system@@GLIBC_2.2.5
+
+❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep exit
+
+
+
+
+
