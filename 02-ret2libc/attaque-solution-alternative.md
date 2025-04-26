@@ -70,12 +70,4 @@ Start              End                Perm	Name
 
 >> Exécutez votre exploit et observez son échec dû à une violation de segmentation (signal SIGSEGV).
 
-
-
-
-
-
-
-
-
-
+>> Lancez une session GDB, chargez le payload payload1 et exécutez-le pas à pas. Vérifiez que toutes les adresses sont correctement définies, mais constatez que l'exécution complète se termine par une violation de segmentation (segfault).Identifiez la fonction qui génère cette faute.
