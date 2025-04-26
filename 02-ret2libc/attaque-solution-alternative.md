@@ -1,4 +1,4 @@
-# objectifs: trouver les adresses des varibles:
+# Objectifs: trouver les adresses des varibles:
 libc_base_address
 ret
 pop_rdi
@@ -6,7 +6,7 @@ binsh_addr
 system_addr
 exit_addr
 
-Installer ropper : 
+## Installer ropper : 
 
 Ropper est principalement écrit en Python. 
 
@@ -16,24 +16,24 @@ sudo apt update ; sudo apt install ropper
 
 lancer ropper: ropper (Entrée)
 
-pop_rdi :
+## pop_rdi (000000000002a3e5):
 
 ![poprdi gadget](https://raw.githubusercontent.com/adell2024/intro_securite_info/master/02-ret2libc/images/poprdi.png)
 
 
-binsh_addr :
+## binsh_addr (1d8678):
 
 ❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6 | grep /bin/sh
 
  1d8678 /bin/sh
 
-system_addr :
+## system_addr (0000000000050d70):
 
 ❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep system
 
   1481: 0000000000050d70    45 FUNC    WEAK   DEFAULT   15 system@@GLIBC_2.2.5
 
-exit_addr:
+## exit_addr (00000000000455f0):
 
 ❯ readelf -s  /usr/lib/x86_64-linux-gnu/libc.so.6 | grep exit
 
@@ -41,7 +41,7 @@ exit_addr:
 
 les décalages (offsets) que nous avons découverts ci-dessus seront ajoutés à l'adresse où la libc sera chargée. Puisque l'ASLR est désactivé, cette adresse sera la même à chaque exécution du programme vulnérable et peut être trouvée en examinant l'allocation mémoire du processus.
 
-libc_base_address (0x00007ffff7c00000):
+## libc_base_address (0x00007ffff7c00000):
 
 gdb ./ret2libc -q
 
