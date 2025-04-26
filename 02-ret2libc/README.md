@@ -46,6 +46,7 @@ gdb-peda$ asmsearch "pop rdi ; ret"
 gdb-peda$ p system
 
 $1 = {int (const char *)} 0x7ffff7e36e50 <__libc_system>
+
 gdb-peda$
 
 ## Chercher l'offset
