@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+//Hyptothèses: le mécanisme ASLR désactivé, Pas de CANRAY
+// sudo apt-get update
+//sudo apt-get install nasm
+
 void vuln()
 {
 	char buf[128];
