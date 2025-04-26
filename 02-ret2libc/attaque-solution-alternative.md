@@ -64,6 +64,14 @@ Start              End                Perm	Name
 0x00007ffff7c00000 0x00007ffff7c28000 r--p	/usr/lib/x86_64-linux-gnu/libc.so.6 
 
 
+#exploit1.py
+
+>> Modifiez le script pour utiliser les valeurs correspondant à votre environnement pour les variables mentionnées précédemment.
+
+>> Exécutez votre exploit et observez son échec dû à une violation de segmentation (signal SIGSEGV).
+
+
+
 
 
 
