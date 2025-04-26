@@ -39,6 +39,32 @@ exit_addr:
 
 2760: 00000000000455f0    32 FUNC    GLOBAL DEFAULT   15 exit@@GLIBC_2.2.5
 
+les décalages (offsets) que nous avons découverts ci-dessus seront ajoutés à l'adresse où la libc sera chargée. Puisque l'ASLR est désactivé, cette adresse sera la même à chaque exécution du programme vulnérable et peut être trouvée en examinant l'allocation mémoire du processus.
+
+libc_base_address (0x00007ffff7c00000):
+
+gdb ./ret2libc -q
+
+gdb-peda$ start
+
+gdb-peda$ vmmap
+
+Start              End                Perm	Name
+
+0x00400000         0x00401000         r--p	/home/insa/intro_securite_info/02-ret2libc/ret2libc
+
+0x00401000         0x00402000         r-xp	/home/insa/intro_securite_info/02-ret2libc/ret2libc
+
+0x00402000         0x00403000         r--p	/home/insa/intro_securite_info/02-ret2libc/ret2libc
+
+0x00403000         0x00404000         r--p	/home/insa/intro_securite_info/02-ret2libc/ret2libc
+
+0x00404000         0x00405000         rw-p	/home/insa/intro_securite_info/02-ret2libc/ret2libc
+
+0x00007ffff7c00000 0x00007ffff7c28000 r--p	/usr/lib/x86_64-linux-gnu/libc.so.6 
+
+
+
 
 
 
