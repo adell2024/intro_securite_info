@@ -1,4 +1,4 @@
-objectifs: trouver les adresses des varibles:
+#objectifs: trouver les adresses des varibles:
 libc_base_address
 ret
 pop_rdi
