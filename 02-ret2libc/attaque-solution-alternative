@@ -8,4 +8,4 @@ sudo apt update ; sudo apt install ropper
 
 lancer ropper: ropper (Entrée)
 
-https://github.com/adell2024/intro_securite_info/blob/master/02-ret2libc/images/poprdi.png
+![poprdi gadget](./images/poprdi.png)
