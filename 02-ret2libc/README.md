@@ -48,7 +48,8 @@ Ma méthode préférée (avec l'outil indépendant Ropper):
 
 Ma méthode préférée (avec la commande strings):
 
-strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6  | grep /bin/sh
+❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6  | grep /bin/sh
+
  1d8678 /bin/sh
 
 ## Chercher l'adresse de la fonction system
