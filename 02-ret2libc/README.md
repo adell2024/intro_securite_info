@@ -86,26 +86,3 @@ sous GNU/Linux) est le syndrome que notre application est effectivement affecté
 ## Lancez l'attaque
 
 Mettez les différentes adresses trouvées dans les scripts pythons (les scripts exploitx.py où x est le numéro de l'exploit)
-
-
-## Voici une alternative pour trouver les offsets:
-
-Trouver l'offset d'un gadget poprdi (avec l'outil indépendant Ropper):
-
-![Schéma de l'architecture](images/poprdi.png)
-
-Ma méthode préférée pour trouver l'offset de /bin/sh (avec la commande strings):
-
-❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6  | grep /bin/sh
-
- 1d8678 /bin/sh
-
- Ma méthode préférée pour trouver l'adresse de la fonction system:
-
-❯ readelf -s /usr/lib/x86_64-linux-gnu/libc.so.6 | grep system
-
-1481: 0000000000050d70    45 FUNC    WEAK   DEFAULT   15 system@@GLIBC_2.2.5
-
-[Notez l'offset 0000000000050d70 de la fonction system]
-
-Comme vous l'avez compris, les décalages/offsets  que nous avons découverts ci-dessus seront ajoutés à l'adresse à laquelle la libc sera chargée. Étant donné que l'ASLR est désactivé, cette adresse sera la même à chaque exécution du programme vulnérable et peut être trouvée en examinant l'allocation mémoire du processus.
