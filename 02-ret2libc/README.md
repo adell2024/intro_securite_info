@@ -85,6 +85,6 @@ sous GNU/Linux) est le syndrome que notre application est effectivement affecté
 
 ## Lancez l'attaque
 
-Mettez les différentes adresses trouvées dans le script pyton monexploit.py
+Mettez les différentes adresses trouvées dans les scripts pythons (les scripts exploitx.py où x est le numéro de l'exploit)
 
 
