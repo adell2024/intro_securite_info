@@ -4,6 +4,7 @@
 
 * Le mécanisme de randomisation de l'espace d'adresse ASLR est désactivé
 
+* Installation de l'outil ropper :  https://github.com/sashs/Ropper
 
 ![ret1](https://github.com/aabda2000/sti3a-security/assets/38082725/a7908f53-49b0-4ed9-8a84-5e8b42212306)
 
@@ -36,6 +37,11 @@ gdb-peda$ dumprop
 ou
 
 gdb-peda$ asmsearch "pop rdi ; ret"
+
+Ma méthode préférée:
+
+![Schéma de l'architecture](images/poprdi.png)
+
 
 ## Chercher l'adresse de la chaîne "/bin/sh"
 
