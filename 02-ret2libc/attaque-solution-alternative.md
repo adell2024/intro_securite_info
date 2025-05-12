@@ -74,3 +74,24 @@ Start              End                Perm	Name
 >> Exécutez votre exploit et observez son échec dû à une violation de segmentation (signal SIGSEGV).
 
 >> Initialisez une session GDB, importez le payload payload1 et procédez à une exécution pas à pas. Confirmez que toutes les adresses sont correctement configurées, mais notez que l'exécution complète aboutit à une violation de segmentation (segfault). Déterminez la fonction responsable de cette erreur.
+
+
+## Alignement
+
+Si nous déboguons le programme vulnérable en utilisant l'exploit mentionné ci-dessus et que nous plaçons un point d'arrêt à l'instruction de retour de la fonction, nous obtenons ce qui suit :
+
+1 → RBP a été écrasé,
+2 → l’instruction suivante (ret) va extraire l’adresse au sommet de la pile et la placer dans RIP,
+3 → le gadget POP RDI ; RET sera exécuté, plaçant la chaîne "/bin/sh" dans le registre RDI.
+
+Bien que tout fonctionne comme prévu, en laissant le programme continuer pas à pas , on arrive à l’instruction suivante :
+
+movaps XMMWORD PTR .......
+
+La convention d’appel 64 bits exige que la pile soit alignée sur 16 octets avant chaque instruction call, mais cette contrainte est facilement violée lors de l’exécution d’une chaîne ROP, ce qui entraîne un mauvais alignement de la pile pour tous les appels suivants effectués depuis cette fonction.
+
+L’instruction movaps déclenche une erreur de protection générale (General Protection Fault) lorsqu’elle opère sur des données non alignées. Pour éviter cela, essayez d’ajouter un ret supplémentaire dans votre chaîne ROP avant de retourner dans une fonction, ou bien retournez plus loin dans la fonction afin de passer une instruction push.
+
+On peut trouver une adresse contenant une instruction RET supplémentaire dans le fichier libc, en suivant exactement le même processus que pour trouver le gadget POP RDI ; RET (en utilisant ropper ou un outil similaire).
+
+Le script final d’exploitation sera dans les exploits.py
