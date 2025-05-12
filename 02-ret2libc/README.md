@@ -38,19 +38,9 @@ ou
 
 gdb-peda$ asmsearch "pop rdi ; ret"
 
-Ma méthode préférée (avec l'outil indépendant Ropper):
-
-![Schéma de l'architecture](images/poprdi.png)
-
 ## Chercher l'adresse de la chaîne "/bin/sh"
 
 ![ret4](https://github.com/aabda2000/sti3a-security/assets/38082725/e73f41cb-5a46-478e-8a6c-3b82b30164a4)
-
-Ma méthode préférée (avec la commande strings):
-
-❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6  | grep /bin/sh
-
- 1d8678 /bin/sh
 
 ## Chercher l'adresse de la fonction system
 
@@ -88,7 +78,6 @@ gdb-peda$ pattern offset 0x41514141
 
 1095844161 found at offset: 136
 
-
 l'offset vaut 136
 
 La génération d'une erreur de segmentation (et d'un coredump (contenant l'état de la mémoire au moment du décès du processus,
@@ -99,3 +88,24 @@ sous GNU/Linux) est le syndrome que notre application est effectivement affecté
 Mettez les différentes adresses trouvées dans les scripts pythons (les scripts exploitx.py où x est le numéro de l'exploit)
 
 
+## Voici une alternative pour trouver les offsets:
+
+Trouver l'offset d'un gadget poprdi (avec l'outil indépendant Ropper):
+
+![Schéma de l'architecture](images/poprdi.png)
+
+Ma méthode préférée pour trouver l'offset de /bin/sh (avec la commande strings):
+
+❯ strings -a -t x /usr/lib/x86_64-linux-gnu/libc.so.6  | grep /bin/sh
+
+ 1d8678 /bin/sh
+
+ Ma méthode préférée pour trouver l'adresse de la fonction system:
+
+❯ readelf -s /usr/lib/x86_64-linux-gnu/libc.so.6 | grep system
+
+1481: 0000000000050d70    45 FUNC    WEAK   DEFAULT   15 system@@GLIBC_2.2.5
+
+[Notez l'offset 0000000000050d70 de la fonction system]
+
+Comme vous l'avez compris, les décalages/offsets  que nous avons découverts ci-dessus seront ajoutés à l'adresse à laquelle la libc sera chargée. Étant donné que l'ASLR est désactivé, cette adresse sera la même à chaque exécution du programme vulnérable et peut être trouvée en examinant l'allocation mémoire du processus.
