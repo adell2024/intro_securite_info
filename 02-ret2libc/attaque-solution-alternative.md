@@ -1,10 +1,10 @@
 # Objectifs: trouver les adresses des varibles:
-libc_base_address
-ret
-pop_rdi
-binsh_addr
-system_addr
-exit_addr
+libc_base_address,
+ret,
+pop_rdi,
+binsh_addr,
+system_addr,
+exit_addr,
 
 ## Installer ropper : 
 
@@ -42,6 +42,9 @@ lancer ropper: ropper (Entrée)
 les décalages (offsets) que nous avons découverts ci-dessus seront ajoutés à l'adresse où la libc sera chargée. Puisque l'ASLR est désactivé, cette adresse sera la même à chaque exécution du programme vulnérable et peut être trouvée en examinant l'allocation mémoire du processus.
 
 ## libc_base_address (0x00007ffff7c00000):
+
+Comme vous l'avez compris, les décalages/offsets  que nous avons découverts ci-dessus seront ajoutés à l'adresse à laquelle la libc sera chargée. Étant donné que l'ASLR est désactivé, cette adresse sera la même à chaque exécution du programme vulnérable et peut être trouvée en examinant l'allocation mémoire du processus.
+
 
 gdb ./ret2libc -q
 
