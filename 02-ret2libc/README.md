@@ -38,14 +38,16 @@ ou
 
 gdb-peda$ asmsearch "pop rdi ; ret"
 
-Ma méthode préférée:
+Ma méthode préférée (avec l'outil indépendant Ropper):
 
 ![Schéma de l'architecture](images/poprdi.png)
-
 
 ## Chercher l'adresse de la chaîne "/bin/sh"
 
 ![ret4](https://github.com/aabda2000/sti3a-security/assets/38082725/e73f41cb-5a46-478e-8a6c-3b82b30164a4)
+
+Ma méthode préférée (avec la commande strings):
+
 
 ## Chercher l'adresse de la fonction system
 
