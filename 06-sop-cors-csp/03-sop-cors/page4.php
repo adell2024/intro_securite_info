@@ -14,7 +14,7 @@
 </body>
 <script type="text/javascript">
     $.ajax({
-            url: "http://192.168.180.136:8000/hello_from_different_origin.php",
+            url: "http://192.168.209.129:8000/hfdo.php",
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
