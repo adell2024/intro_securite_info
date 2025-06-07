@@ -2,7 +2,6 @@
 // Définir l'origine autorisée
 $allowedOrigin = "http://192.168.209.129:5000";
 
-
 // Définir les en-têtes CORS
 header("Access-Control-Allow-Origin: $allowedOrigin");
 header("Access-Control-Allow-Credentials: true");
