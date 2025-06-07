@@ -14,16 +14,22 @@
 </body>
 <script type="text/javascript">
     $.ajax({
-            url: "http://192.168.209.129:8000/hfdo.php",
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                "Header-Custom-TizenCORS": "OK"
-            }
-        })
-        .done(function(data) {
-            $("#result1").html(data);
-        });
+    url: "http://192.168.209.129:8000/hfdo.php",
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        "Header-Custom-TizenCORS": "OK"
+    },
+    xhrFields: {
+        withCredentials: true
+    }
+})
+.done(function(data) {
+    $("#result1").html(JSON.stringify(data));
+})
+.fail(function(jqXHR, textStatus, errorThrown) {
+    console.error("Erreur AJAX:", textStatus, errorThrown);
+});
 </script>
 
 </html>
